@@ -51,7 +51,7 @@ By automating instance management, businesses can ensure <b>cost-effective and o
 <p align="justify">
  This project is a comprehensive automation solution designed to <b>enhance the management of EC2 instances within an AWS environment</b>. By seamlessly integrating <b>EventBridge Events and Lambda functions</b>, this project enables the effortless implementation of automated start and stop actions for EC2 instances based on predefined schedules.
 
-The underlying <b>Lambda function</b> house the intelligent logic responsible for executing the start and stop actions on EC2 instances. Leveraging AWS APIs, the Lambda functions interact seamlessly with EC2 services, providing a reliable and efficient automation mechanism. Users can customize the function's behavior to incorporate additional checks or perform specific tasks before initiating the start or stop process, further enhancing the automation capabilities.
+The underlying <b>Lambda function</b> house the intelligent logic responsible for executing the start and stop actions on EC2 instances. <b>Leveraging AWS APIs</b>, the Lambda functions interact seamlessly with EC2 services, providing a reliable and efficient automation mechanism. Users can customize the function's behavior to incorporate additional checks or perform specific tasks before initiating the start or stop process, further enhancing the automation capabilities.
 
 The integration of <b>EventBridge Events</b> provides a highly flexible and customizable event-driven architecture. Users can configure rules and triggers to define precise conditions under which the <b>Lambda function</b> is invoked, allowing for fine-grained control over the start and stop actions. Whether it's scheduling regular maintenance windows or responding to specific events such as user demand spikes or system alerts, this solution offers the versatility to tailor the EC2 instance lifecycle to specific business requirements.
 </p>
@@ -95,6 +95,10 @@ For teams working in different time zones or regions, automated start and stop s
 </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Embark on Your Journey: Introduction to Essential Services
+<p align="justify">
+As we move forward, you'll discover a <b>beginner-friendly introduction</b> to the essential services used in this project, perfect for those <b>new to the topic</b>. However, if you're already well-versed or have hands-on experience with these services, simply [click here](#getting-started) to jump right into getting started! 🚀🌟
 
 <!-- OVERVIEW OF AMAZON EC2 -->
 ## Amazon EC2: Introduction and Key Features
@@ -242,6 +246,7 @@ The schedule details for the START and STOP rule are provided in the accompanyin
 | START Rule                          | STOP Rule                           |
 | ----------------------------------- | ----------------------------------- |
 | ![EC2_START_Rule](https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EC2StartRule.png) | ![EC2_STOP_Rule](https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EC2StopRule.png) |
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- TESTING AND VALIDATING -->

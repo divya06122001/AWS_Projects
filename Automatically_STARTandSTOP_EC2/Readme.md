@@ -98,7 +98,7 @@ For teams working in different time zones or regions, automated start and stop s
 
 ## Embark on Your Journey: Introduction to Essential Services
 <p align="justify">
-As we move forward, you'll discover a <b>beginner-friendly introduction</b> to the essential services used in this project, perfect for those <b>new to the topic</b>. However, if you're already well-versed or have hands-on experience with these services, simply [click here](#getting-started) to jump right into getting started! 🚀🌟
+As we move forward, you'll discover a <b>beginner-friendly introduction</b> to the essential services used in this project, perfect for those <b>new to the topic</b>. However, if you're already well-versed or have hands-on experience with these services, simply <a href="#getting-started">click here</a> to jump right into getting started! 🚀🌟
 
 <!-- OVERVIEW OF AMAZON EC2 -->
 ## Amazon EC2: Introduction and Key Features
@@ -177,6 +177,7 @@ EventBridge seamlessly integrates with various AWS services, including AWS SaaS 
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a name="getting-started"></a>
 <!-- GETTING STARTED -->
 ## Getting Started
 Oh, absolutely!

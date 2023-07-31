@@ -1,10 +1,9 @@
-<a name="readme-top"></a>
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/divya06122001/AWS_Projects">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Title-Image.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRzBFAiEAqeqEtwzoDBw5MWXis3ckMbk%2FjCIQwoxCHNJ2AEBJomcCIGZdCvVjIqD9nYnewWFhKFDF5%2Bs8CXgHTcRNEGnUVZ4sKugCCDsQABoMOTczOTE4MzI1MjQ2Igwx5OKyQxQMFqkA5LMqxQJ3SBisg7YKVSnOSsvIQFi2XZkHs8hdJLpcFzwtd0IsRyuJic%2FTenypjQhQoZFkr2%2FEQqQUtkAAZpj%2BE84v15fNR47bKs%2FzZ8MBBWJ2q4fziqf9HjoDn9EELDLH6HHHWfI58cPVRfsQtGZ3qSd%2FJusanijzM2ulYAKi0UbTDwosw2JZnuNAdSznpkv15m95jIEnXn382wKiw0UoAcglEZ1IHd29fANpirVESG2NvVIizBjUgTlxVvxO0bVR6bDkAlE8UpIijpVqRcurzr6bgZSJ7Kr5w36xE1y5EUpXvyOq7F20jc80gxFcQiiAPxoLW8V8jZC4O5h7u4oBLJA0sk12hk6Fh0v2EB60vodCD9etP5%2BEn6m9gLq%2BYf5k6uFHFahMJ4YbLmH1IejrbJTlpbekaRfhC6s3taE%2BQB2xM%2BU6U%2BHiilwgMPX4gaYGOrMCiy3w%2BOYEch6jA9hlWyTZ7q32l1alpKXx5P55w2dwqH43oC5iDcCwijKuzahtGxheE8QqfwK1SuhRsB0KIoBNdQhRYl5C0RYGoFUyF800QKyrnjrEtprwzEyKJjL9W3gcOTUBoZhXr2tBYuMQgBi8rzD4ugkkvqLhjDvJGP1P2HBv7xPezox5%2FHTdDZwRFVD%2BW7HozZWNRBZWqHhOPYQr1Ed%2FkJT8kURtr5DeEHxeSqC082m5m6IPWYNdi6J%2FBbnuD2lYGaFyk5f%2BmlsA1EJVtQ%2BAUZMSFPHWnZyJQ8B47UayrfT%2BRI4X4VjpFmi6rzZaB%2BKVVE9QXD0pgI1ebZ9ThN0EJW0GLE%2Fbv2WHgIDYUHJI%2F1jS%2FGujvU%2B1owQ1zbnjgsTzSQcVhPA0B5YXy%2FoxMA2BTQ%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230726T123143Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIA6FQQOJH7AKQPAESP%2F20230726%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=78512a43047c72fef6ce2c29ff5fc519df72709b00e486ea2f4f3a182711e40f" width="1000" height="350">
   </a>
-
+<a name="readme-top"></a>
 <h2 align="center">Efficient EC2 Management: Automating Start and Stop EC2 with AWS Lambda and Amazon EventBridge</h2>
 
 <p align="justify">This project showcases the automation of EC2 instances using AWS services, <b>EventBridge and Lambda</b>.

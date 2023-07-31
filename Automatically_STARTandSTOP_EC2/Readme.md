@@ -2,7 +2,7 @@
 <div align="center">
   <a href="https://github.com/divya06122001/AWS_Projects">
   <a name="readme-top"></a>
-  <img src="" width="1000" height="350">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Title-Image.png" width="1000" height="350">
   </a>
 <a name="readme-top"></a>
 <h2 align="center">Efficient EC2 Management: Automating Start and Stop EC2 with AWS Lambda and Amazon EventBridge</h2>
@@ -225,10 +225,10 @@ So, buckle up, and let's begin this fantastic journey into the world of automate
 
 <!-- IMPLEMENTATION STEPS -->
 ## Implementation Steps
- <div align="center">
-  <img src="" alt="Logo" width="500" height="300">
- </div>
- 
+<div align="center">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Implementation+Steps.jpg" alt="Logo" width="500" height="400">
+</div>
+
 <p align="justify">
 To weave this enchanting solution, follow these mystical steps:
 
@@ -276,7 +276,7 @@ Let's validate the harmonious connection between our EventBridge rules and the L
  <br />
 <p align="justify">In the realm of cloud magic, vigilant monitoring 🔍 and logging are essential to ensure our automated processes run without a hitch!  
  <div align="center">
- <img src="" alt="Logo" width="700" height="400">
+ <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/AWS+CloudWatch+Log.png" alt="Logo" width="700" height="400">
  </div>
 <b>AWS CloudWatch</b> will be our trusty companion in this endeavor, as we leverage its powerful logs and metrics to keep a watchful eye on our Lambda function's performance. This way, we can swiftly identify any lurking issues and troubleshoot them with our arcane knowledge.
 

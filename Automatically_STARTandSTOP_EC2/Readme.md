@@ -1,7 +1,7 @@
+<a name="readme-top"></a>
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/divya06122001/AWS_Projects">
-  <a name="readme-top"></a>
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Title-Image.png" width="1000" height="350">
   </a>
 <a name="readme-top"></a>
@@ -27,7 +27,7 @@ By automating instance management, businesses can ensure <b>cost-effective and o
   <summary>Table of Contents</summary>
   <ol>
      <li><a href="#about-the-project">About The Project</a></li>
-     <li><a href="#advantages">Advantages</a></li>
+     <li><a href="#benefits">Benefits</a></li>
      <li><a href="#amazon-ec2-introduction-and-key-features">Overview of Amazon EC2</a></li>
      <li><a href="#aws-lambda-introduction-and-key-features">Overview of AWS Lambda</a></li>
      <li><a href="#amazon-eventbridge-introduction-and-key-features">Overview of Amazon EventBridge</a></li>
@@ -58,8 +58,8 @@ The integration of <b>EventBridge Events</b> provides a highly flexible and cust
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ADVANTAGES -->
-## Advantages
+<!-- BENEFITS -->
+## Benefits
  <div align="center">
   <img src="" alt="Logo" width="350" height="300">
  </div>

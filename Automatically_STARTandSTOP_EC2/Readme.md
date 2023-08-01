@@ -61,7 +61,7 @@ The integration of <b>EventBridge Events</b> provides a highly flexible and cust
 <!-- BENEFITS -->
 ## Benefits
  <div align="center">
-  <img src="" alt="Logo" width="350" height="300">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Benefits.jpeg" alt="Logo" width="500" height="300">
  </div>
 
 <p align="justify">
@@ -206,6 +206,7 @@ Ah, here's a crucial one! Make sure you have some EC2 instances already running 
 
 But wait, don't fret - I won't leave you hanging! I'll make sure you have the right tags in place before any magic happens! No accidental mass shutdowns, I promise! 😄
 
+You can check and edit your EC2 tags like the way I mentioned in this document [here]().
 Now that we've got all our prerequisites sorted, we're ready to rock and roll with EC2 management like never before! 🎉🚀 Let's dive in and make your EC2 instances dance to your commands with grace and precision! 💃🕺
 
 Don't worry, I won't leave you hanging without proper guidance. And hey, if you have any questions, feel free to ask - I'm here to make your EC2 management adventure a delightful one! 🌈🧁

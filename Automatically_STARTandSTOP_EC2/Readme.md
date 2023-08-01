@@ -152,7 +152,6 @@ Lambda supports multiple programming languages, including Node.js, Python, Java,
 
 <!-- OVERVIEW OF AMAZON EVENTBRIDGE -->
 ## Amazon EventBridge: Introduction and Key Features
-
  <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge.png" width="750" height="300">
  </div>
@@ -180,12 +179,16 @@ EventBridge seamlessly integrates with various AWS services, including AWS SaaS 
 <a name="getting-started"></a>
 <!-- GETTING STARTED -->
 ## Getting Started
-Oh, absolutely!
+<div align="center">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Getting+Started.jpg" width="600" height="350">
+ </div>
+
+**Oh, absolutely!**
 Knowledge is power, and I'm glad you appreciated the importance of understanding the services we're about to work with! 🚀 But don't worry, I won't bore you with any more details. Let's dive straight into the real magic of this project! 🧙‍♀️ No more delays, no more jibber-jabber - it's time for the fun stuff! 🎉
 
-Get ready to wield your AWS wand 🪄 and unleash the power of automated EC2 management! 💻 Let's make those instances start and stop like they've never done before! No more manual tinkering - we'll do it all with a flick of the finger! ✨💫
+**Get ready to wield your AWS wand 🪄 and unleash the power of automated EC2 management!** 💻 Let's make those instances start and stop like they've never done before! No more manual tinkering - we'll do it all with a flick of the finger! ✨💫
 
-So, grab your coffee, put on your wizard hat (if you have one), and let's rock and roll! 🧙‍♀️🎩 I promise we won't waste any more of your precious time. It's time to make AWS dance to our tune! 💃🕺
+So, grab your coffee, put on your wizard hat (if you have one), and let's rock and roll! 🧙‍♀️🎩 I promise I won't waste any more of your precious time. It's time to make AWS dance to our tune! 💃🕺
 
 <!-- PREREQUISITES -->
 ## Prerequisites
@@ -198,7 +201,7 @@ An AWS account is your ticket to the magical realm of cloud computing! If you do
 
 <b>Step 2: Familiarity with AWS Console - Know Your Way Around!</b>
 <br />
-While we'll make the process as easy as waving a wand, having some familiarity with the AWS Console will make your adventure even smoother! 🧭 If you're not already acquainted, take a quick stroll around the console to feel more at home.
+While I'll make the process as easy as waving a wand, having some familiarity with the AWS Console will make your adventure even smoother! 🧭 If you're not already acquainted, take a quick stroll around the console to feel more at home.
 
 <b>Step 3: EC2 Instances with Necessary Tags - Our Secret Sauce!</b>
 <br />
@@ -207,9 +210,9 @@ Ah, here's a crucial one! Make sure you have some EC2 instances already running 
 But wait, don't fret - I won't leave you hanging! I'll make sure you have the right tags in place before any magic happens! No accidental mass shutdowns, I promise! 😄
 
 You can check and edit your EC2 tags like the way I mentioned in this document [here]().
-Now that we've got all our prerequisites sorted, we're ready to rock and roll with EC2 management like never before! 🎉🚀 Let's dive in and make your EC2 instances dance to your commands with grace and precision! 💃🕺
 
-Don't worry, I won't leave you hanging without proper guidance. And hey, if you have any questions, feel free to ask - I'm here to make your EC2 management adventure a delightful one! 🌈🧁
+Now that we've got all our prerequisites sorted, we're ready to rock and roll with EC2 management like never before! 🎉🚀 Let's dive in and make your EC2 instances dance to your commands with grace and precision! 💃🕺
+And hey, if you have any questions, feel free to ask - I'm here to make your EC2 management adventure a delightful one! 🌈🧁
 
 So, buckle up, and let's begin this fantastic journey into the world of automated EC2 magic! 🧙‍♀️✨
 
@@ -221,6 +224,16 @@ So, buckle up, and let's begin this fantastic journey into the world of automate
 <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/cron-job-arch-diagram.png" width="900" height="600">
  </div>
 <h3 align="center">Illustration of Architecture of Efficient EC2 Management</h3>
+
+Welcome to the magical world of our Architecture Design! 🌟✨ Picture it as a perfectly orchestrated dance between AWS Lambda and Amazon EventBridge, where they team up like mischievous elves to manage EC2 instances effortlessly. 🧝‍♂️💃
+
+Our star player, the Lambda function, is like the master conductor, waving its coding wand to start and stop EC2 instances on command. 🎩🪄 Meanwhile, Amazon EventBridge plays matchmaker, ensuring the Lambda function knows exactly when to work its magic. 💘
+
+And guess what? We've got schedules that rival the quirkiest calendars out there! From business hours to weekends and even holidays – our EC2 instances know how to take a break or jump into action just in time! 🗓️🎉
+
+Best part? It's like watching a comedy show with all the cost savings and efficiency gains! Say goodbye to manual hassles, and hello to a cloud ballet of automation. 💸🚀
+
+So, buckle up, my fellow cloud adventurers, as we dive into this whimsical journey of EC2 management where AWS services dance to the tune of automation and unleash the magic of efficiency! 🎭🧚‍♂️🌈
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

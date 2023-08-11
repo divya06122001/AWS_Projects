@@ -265,11 +265,11 @@ Marvel at the **enchanting secrets** within the [How to do our Lambda Test]() fi
 <br />
 -> Prepare your magic scrolls and create EventBridge rules. Enchant them with the **perfect schedule or event patterns**, and command them to trigger your **Lambda function's mystical powers**!
 
-Behold! 🕰️📅 The [mystic cron expression]() that keeps our project in perfect harmony is revealed in the picture. Always **double-check** its accuracy by gazing into the future and observing the **next trigger dates**. ✨🌟
+Behold! 🕰️📅 Follow the steps to create an EventBridge Schedule and get to enjoy the efforts you've done till now. Always **double-check its accuracy by gazing into the future and observing the next trigger dates. ✨🌟
 
 <b>Step 5: CloudWatch Charm:</b> 🔍👁️‍🗨️
 <br />
--> Use the **magical CloudWatch** to cast spells of **monitoring and tracking**. Watch closely as it reveals the secrets of your **Lambda's performance** and keeps an eye on any **mischievous gremlins**!
+-> Use the magical CloudWatch to cast spells of monitoring and tracking. Watch closely as it reveals the secrets of your Lambda's performance and keeps an eye on any mischievous gremlins!
 
 <b>Step 6: Dance of Automation:</b> 🎉💰💫
 <br />

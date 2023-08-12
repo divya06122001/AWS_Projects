@@ -1,16 +1,14 @@
 <a name="readme-top"></a>
 <!-- PROJECT LOGO -->
-<div align="center">
+<div align="right">
   <a href="https://github.com/divya06122001/AWS_Projects">
-  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Title-Image.png" width="1000" height="350">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Title-Image.png" width="900" height="350">
   </a>
+</div>
 <a name="readme-top"></a>
-<h2 align="center">Efficient EC2 Management: Automating Start and Stop EC2 with AWS Lambda and Amazon EventBridge</h2>
+<h2 align="center">Efficient EC2 Management: Automating the Start and Stop of EC2 Instances with AWS Lambda and Amazon EventBridge</h2>
 
-<p align="justify">This project showcases the <b>automation of EC2 instances using AWS services, EventBridge and Lambda</b>.
-By utilizing these services, the solution enables the automatic starting and stopping of EC2 instances based on predefined schedules, leading to <b>improved resource management</b> and <b>cost optimization in AWS environments</b>.
-By automating instance management, businesses can ensure <b>cost-effective and optimized use of AWS resources</b> while <b>improving security and operational efficiency</b>.
-    <br />
+<p align="justify">This project <strong>illustrates</strong> how <strong>AWS services</strong>, <strong>Amazon EventBridge</strong>, and <strong>AWS Lambda</strong> can <strong>automate</strong> the management of <strong>EC2 instances</strong>. By <strong>utilizing these tools</strong>, we achieve <strong>seamless starting and stopping of EC2 instances as per preset schedules</strong>. This approach enhances <strong>resource management</strong> and <strong>optimizes costs in AWS environments</strong>. The <strong>automated instance management</strong> not only ensures <strong>smart resource utilization</strong> but also boosts <strong>security and operational efficiency</strong>, creating a <strong>win-win scenario</strong> for businesses.</p>
     <p align="center">
     <a href="https://github.com/divya06122001/AWS_Projects/tree/main/LambdaEC2StartStopAutomatically"><strong>Explore the docs »</strong></a>
     <br />
@@ -20,23 +18,23 @@ By automating instance management, businesses can ensure <b>cost-effective and o
     <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
     ·
   </p>
-</div>
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
-     <li><a href="#project-overview">Project Overview</a></li>
-     <li><a href="#benefits">Benefits</a></li>
+     <li><a href="#project-overview-a-spellbinding-journey-of-automation-and-efficiency">Project Overview</a></li>
+     <li><a href="#benefits-unleash-the-power-of-cloud-wizardry">Benefits</a></li>
      <li><a href="#amazon-ec2-introduction-and-key-features">Overview of Amazon EC2</a></li>
      <li><a href="#aws-lambda-introduction-and-key-features">Overview of AWS Lambda</a></li>
      <li><a href="#amazon-eventbridge-introduction-and-key-features">Overview of Amazon EventBridge</a></li>
       <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started-begin-your-whimsical-cloud-adventure">Getting Started</a>
       <ul>
-       <li><a href="#prerequisites">Prerequisites</a></li>
-       <li><a href="#architecture-design">Architecture Design</a></li>
-       <li><a href="#implementation-steps">Implementation Steps</a></li>
+       <li><a href="#prerequisites-gearing-up-for-the-enchantment">Prerequisites</a></li>
+       <li><a href="#architecture-design-the-art-of-cloud-enchantment">Architecture Design</a></li>
+       <li><a href="#implementation-steps-conjure-the-magic-of-aws-lambda-and-eventbridge">Implementation Steps</a></li>
       </ul>
     </li>
       <li><a href="#conclusion">Conclusion</a></li>
@@ -44,19 +42,23 @@ By automating instance management, businesses can ensure <b>cost-effective and o
 </details>
 
 <!-- PROJECT OVERVIEW -->
-## Project Overview: A Spellbinding Journey of Automation and Efficiency 🚀🧙‍♀️💫
-<p align="justify">
-This project is a <b>comprehensive automation solution</b> designed to <b>enhance the management of EC2 instances within an AWS environment</b>. By seamlessly integrating <b>EventBridge Events and Lambda functions</b>, this project enables the effortless implementation of automated start and stop actions for EC2 instances based on predefined schedules.
-
-The underlying <b>Lambda function</b> house the intelligent logic responsible for executing the start and stop actions on EC2 instances. <b>Leveraging AWS APIs</b>, the Lambda functions interact seamlessly with EC2 services, providing a reliable and efficient automation mechanism. Users can customize the function's behavior to incorporate additional checks or perform specific tasks before initiating the start or stop process, further enhancing the automation capabilities.
-
-The integration of <b>EventBridge Events</b> provides a highly flexible and customizable event-driven architecture. Users can configure rules and triggers to define precise conditions under which the <b>Lambda function</b> is invoked, allowing for fine-grained control over the start and stop actions. Whether it's scheduling regular maintenance windows or responding to specific events such as user demand spikes or system alerts, this solution offers the versatility to tailor the EC2 instance lifecycle to specific business requirements.
+## Project Overview: A Spellbinding Journey of Automation and Efficiency
+<p style="text-align: justify;">
+<strong><span style="color: #ff9900;">🚀 Get ready to dive into a magical world of automation!</span></strong> This project is like a <strong>digital wizard 🧙‍♂️</strong> that adds a touch of enchantment to managing <strong>EC2 instances</strong> in your <strong>AWS kingdom. 🏰✨</strong><br>
+  
+<strong><span style="color: #ff9900;">⚙️ It's all about combining the powers of EventBridge Events and Lambda functions,</span></strong> making your <strong>EC2 instances dance to a scheduled rhythm.</strong> Think of it as your very own <strong>orchestra conductor, orchestrating start and stop actions like a pro! 🎶🤖</strong><br>
+    
+🔮 Behind the scenes, the <strong><span style="color: #ff9900;">Lambda function becomes the genius behind the curtain 🎩,</span></strong> carrying out those <strong>smart start and stop moves on your EC2 instances.</strong> It talks to <strong>AWS APIs with a wink 😉,</strong> ensuring everything happens smoothly and efficiently. It's like having your very own <strong>tech-savvy butler! 🤵🤖</strong><br>
+  
+ But wait, there's more! <strong><span style="color: #ff9900;">🔗EventBridge Events swoop in like fairy godmothers,</span></strong> adding a dash of <strong>magic to the mix. ✨✨</strong> You get to <strong>set the rules, creating triggers</strong> that make your <strong>Lambda function spring into action.</strong> Whether it's dealing with <strong>spikes 📈, alarms 🔔, or just regular housekeeping,</strong> this <strong>dynamic duo has got your back! 🦸‍♂️🌟</strong><br>
+    
+<strong><span style="color: #ff9900;">🎉 So, go ahead, set your instances on autopilot</span></strong> with a <strong>sprinkle of whimsy and a dash of technology. 🌈🔌</strong> <em>Remember, this isn't just automation; it's your very own <strong>tech fairy tale! 📜✨</strong></em>
 </p>
- 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- BENEFITS -->
-## Benefits: Unleash the Power of Cloud Wizardry 💰🌟🪄
+## Benefits: Unleash the Power of Cloud Wizardry
  <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Benefits.jpeg" alt="Logo" width="500" height="300">
  </div>
@@ -175,7 +177,7 @@ EventBridge seamlessly integrates with various AWS services, including AWS SaaS 
 
 <a name="getting-started"></a>
 <!-- GETTING STARTED -->
-## Getting Started: Begin Your Whimsical Cloud Adventure! 🚀🗺️🌈
+## Getting Started: Begin Your Whimsical Cloud Adventure
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Getting+Started.jpg" width="600" height="350">
  </div>
@@ -188,7 +190,7 @@ Knowledge is power, and I'm glad you appreciated the importance of understanding
 So, grab your coffee, put on your wizard hat (if you have one), and let's rock and roll! 🧙‍♀️🎩 I promise I won't waste any more of your precious time. It's time to make AWS dance to our tune! 💃🕺
 
 <!-- PREREQUISITES -->
-## Prerequisites: Gearing Up for the Enchantment! 🧙‍♀️🌟🚀
+## Prerequisites: Gearing Up for the Enchantment
 <p align="justify">
 Alrighty then! Before we embark on this exciting journey of EC2 management, let's get a few things sorted out first! 
 
@@ -215,18 +217,16 @@ So, buckle up, and let's begin this fantastic journey into the world of automate
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ARCHITECTURE DESIGN -->
-## Architecture Design: The Art of Cloud Enchantment 🏰🔮✨
+## Architecture Design: The Art of Cloud Enchantment
  <div align="center">
 <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/cron-job-arch-diagram.png" width="900" height="600">
  </div>
  
 <h3 align="center">Illustration of Architecture of Efficient EC2 Management</h3>
 
-<b>Welcome to our magical world of Architecture Design! 🌟✨</b>
+<b>Picture it as a perfectly orchestrated dance between AWS Lambda and Amazon EventBridge</b>, where they team up like mischievous elves to manage EC2 instances effortlessly.
 
-<b>Picture it as a perfectly orchestrated dance between AWS Lambda and Amazon EventBridge</b>, where they team up like mischievous elves to manage EC2 instances effortlessly. 🧝‍♂️💃
-
-<b>Our star player, the Lambda function, is like the master conductor</b>, waving its coding wand to start and stop EC2 instances on command. 🎩🪄 Meanwhile, <b>Amazon EventBridge plays matchmaker</b>, ensuring the Lambda function knows exactly when to work its magic. 💘
+<b>Our star player, the Lambda function, is like the master conductor</b>, waving its coding wand to start and stop EC2 instances on command. 🎩🪄 Meanwhile, <b>EventBridge Scheduler plays matchmaker</b>, ensuring the Lambda function knows exactly when to work its magic. 💘
 
 <b>And guess what?</b> We've got schedules that rival the quirkiest calendars out there! From business hours to weekends and even holidays – our EC2 instances know how to take a break or jump into action just in time! 🗓️🎉
 
@@ -235,7 +235,7 @@ So, buckle up, and let's begin this fantastic journey into the world of automate
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- IMPLEMENTATION STEPS -->
-## Implementation Steps: Conjure the Magic of AWS Lambda and EventBridge 🧙‍♂️🔑
+## Implementation Steps: Conjure the Magic of AWS Lambda and EventBridge
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Implementation+Steps.jpg" alt="Logo" width="500" height="400">
 </div>

@@ -44,13 +44,13 @@
 <!-- PROJECT OVERVIEW -->
 ## Project Overview: A Spellbinding Journey of Automation and Efficiency
 <p style="text-align: justify;">
-<strong><span style="color: #ff9900;">🚀 Get ready to dive into a magical world of automation!</span></strong> This project is like a <strong>digital wizard 🧙‍♂️</strong> that adds a touch of enchantment to managing <strong>EC2 instances</strong> in your <strong>AWS kingdom. 🏰✨</strong><br>
+<strong><span style="color: #ff9900;">🚀 </strong> This project is like a <strong>digital wizard 🧙‍♂️</strong> that adds a touch of enchantment to managing <strong>EC2 instances</strong> in your <strong>AWS kingdom. 🏰✨</strong><br>
   
-<strong><span style="color: #ff9900;">⚙️ It's all about combining the powers of EventBridge Events and Lambda functions,</span></strong> making your <strong>EC2 instances dance to a scheduled rhythm.</strong> Think of it as your very own <strong>orchestra conductor, orchestrating start and stop actions like a pro! 🎶🤖</strong><br>
+⚙️ This project is all about <strong><span style="color: #ff9900;">combining the powers of EventBridge Events and Lambda functions,</span></strong> making your <strong>EC2 instances dance to a scheduled rhythm.</strong> Think of it as your very own <strong>orchestra conductor, orchestrating start and stop actions like a pro! 🎶🤖</strong><br>
     
-🔮 Behind the scenes, the <strong><span style="color: #ff9900;">Lambda function becomes the genius behind the curtain 🎩,</span></strong> carrying out those <strong>smart start and stop moves on your EC2 instances.</strong> It talks to <strong>AWS APIs with a wink 😉,</strong> ensuring everything happens smoothly and efficiently. It's like having your very own <strong>tech-savvy butler! 🤵🤖</strong><br>
+🔮 The <strong><span style="color: #ff9900;">Lambda function becomes the genius behind the curtain 🎩,</span></strong> carrying out those <strong>smart start and stop moves on your EC2 instances.</strong> It talks to <strong>AWS APIs with a wink 😉,</strong> ensuring everything happens smoothly and efficiently. It's like having your very own <strong>tech-savvy butler! 🤵🤖</strong><br>
   
- But wait, there's more! <strong><span style="color: #ff9900;">🔗EventBridge Events swoop in like fairy godmothers,</span></strong> adding a dash of <strong>magic to the mix. ✨✨</strong> You get to <strong>set the rules, creating triggers</strong> that make your <strong>Lambda function spring into action.</strong> Whether it's dealing with <strong>spikes 📈, alarms 🔔, or just regular housekeeping,</strong> this <strong>dynamic duo has got your back! 🦸‍♂️🌟</strong><br>
+🔗   bBut wait, there's more! <strong><span style="color: #ff9900;">EventBridge Events swoop in like fairy godmothers,</span></strong> adding a dash of <strong>magic to the mix. ✨✨</strong> You get to <strong>set the rules, creating triggers</strong> that make your <strong>Lambda function spring into action.</strong> Whether it's dealing with <strong>spikes 📈, alarms 🔔, or just regular housekeeping,</strong> this <strong>dynamic duo has got your back! 🦸‍♂️🌟</strong><br>
     
 <strong><span style="color: #ff9900;">🎉 So, go ahead, set your instances on autopilot</span></strong> with a <strong>sprinkle of whimsy and a dash of technology. 🌈🔌</strong> <em>Remember, this isn't just automation; it's your very own <strong>tech fairy tale! 📜✨</strong></em>
 </p>

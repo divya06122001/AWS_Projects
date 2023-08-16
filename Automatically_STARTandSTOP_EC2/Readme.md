@@ -198,7 +198,7 @@ Ah, here's a crucial one! Make sure you have some EC2 instances already running 
 
 But wait, don't fret - I won't leave you hanging! I'll make sure you have the right tags in place before any magic happens! **No accidental mass shutdowns, I promise!** 😄
 
-<b>You can work your magic and check the enchanting world of EC2 tags following the steps outlined in this mystical document [here]().</b>
+<b>You can work your magic and check the enchanting world of EC2 tags following the steps outlined in this mystical document [here](https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Check%20and%20Tag%20EC2%20Instances.docx).</b>
 
 Now that, **we've got all our prerequisites sorted**, we're ready to rock and roll with EC2 management like never before! 🎉🚀 Let's dive in and hey, if you have any questions, feel free to ask - **I'm here to make your EC2 management adventure a delightful one!** 🌈🧁
 
@@ -237,25 +237,25 @@ To weave this enchanting solution, follow these mystical steps:
 <br />
 -> Craft an **enchanted IAM role** with the **perfect permissions** for your Lambda function. Make sure to follow the ancient wizarding wisdom of **"least privilege"** to keep everything secure!
 
-Summon the formidable [Create IAM Role]() document – **the key to unlocking its enchanted powers!** 
+Summon the formidable [Create IAM Role](https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%201%20-%20Create%20IAM%20Role.docx) document – **the key to unlocking its enchanted powers!** 
 
 <b>Step 2: Create the Lambda Magic</b> ✨🧙‍♂️ 
 <br />
--> Conjure up a **brand-new Lambda function**. Choose your **preferred spell (Python, Node.js)** or any magic language to weave the code logic that'll control those EC2 instances with a flick of your wand! 🪄🎩
+-> Conjure up a **[brand-new Lambda function](https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Lambda%20Function.txt)**. Choose your **preferred spell (Python, Node.js)** or any magic language to weave the code logic that'll control those EC2 instances with a flick of your wand! 🪄🎩
 
-Delve into the enchanting world of the [Creating Lambda Function]() , **where the magic of automation unfolds before your very eyes!** 🧙‍♂️✨
+Delve into the enchanting world of the [Creating Lambda Function](https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%202%20-%20Creating%20Lambda%20Function.docx) , **where the magic of automation unfolds before your very eyes!** 🧙‍♂️✨
 
 <b>Step 3:Wizardry Testing and Validation</b>🧪🧹
 <br />
 -> Unleash the **full potential of your Lambda spell by taking it for an exhilarating test run!** Try various **Key:Value pairs** to *witness its mastery in STARTING and STOPPING the right EC2 instance/instances!* 🚀🧪🔑✨
 
-Marvel at the **enchanting secrets** within the [Creating Lambda function]() file as it unveils the mysteries of Lambda testing in a single glimpse! ✨📂
+Marvel at the **enchanting secrets** within the [Creating Lambda function](https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%202%20-%20Creating%20Lambda%20Function.docx) file as it unveils the mysteries of Lambda testing in a single glimpse! ✨📂
 
 <b>Step 4: Summon the EventBridge Schedules</b>🔮🗓️
 <br />
 -> Prepare your magic scrolls and create EventBridge schedules. Enchant them with the **perfect schedule or event patterns**, and command them to trigger your **Lambda function's mystical powers**!
 
-Behold! 🕰️📅 Follow the steps mentioned in the document [here]() to **craft your EventBridge Schedule** and **relish the fruits of your labor**! ✨ **Always ensure accuracy by peeking into the future and observing trigger dates**. It's like having a crystal ball for your project's success! 🔮📅
+Behold! 🕰️📅 Follow the steps mentioned in the document [here](https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%203%20-%20Creating%20Amazon%20EventBridge%20Schedules.docx) to **craft your EventBridge Schedule** and **relish the fruits of your labor**! ✨ **Always ensure accuracy by peeking into the future and observing trigger dates**. It's like having a crystal ball for your project's success! 🔮📅
 
 <b>Step 5: CloudWatch Charm:</b> 🔍👁️‍🗨️
 <br />
@@ -284,6 +284,6 @@ Now, go forth and conquer the cloud with confidence! May your projects be brimmi
 
 With your newfound mastery, the **cloud realm is yours to shape**. So, wave your wands of innovation and build enchanted solutions that leave the world in awe! Remember, the **journey of a cloud sorcerer never truly ends** — it's an eternal dance of learning and enchantment! 🎶🌟🔮
 
-**[Thank you]() for joining us on this whimsical adventure. Until we meet again in the realms of cloud magic! 🌈🧚‍♂️💫**
+**[Thank you](https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/A%20Magical%20Journey%20-%20Thank%20You%2C%20Dear%20Reader.md) for joining us on this whimsical adventure. Until we meet again in the realms of cloud magic! 🌈🧚‍♂️💫**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

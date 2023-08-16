@@ -14,7 +14,9 @@
 <br />
 <div align="justify">
   
-  <strong>⚙️ Imagine EC2 instances gracefully following preset schedules</strong> like a well-choreographed <strong>dance routine!</strong> 💃 With a <strong>wave of digital fairy dust ✨,</strong> we make <strong>starting and stopping of instances like a walk in the cloud park.</strong> Resource management levels up, <strong>costs take a backseat in our cloud-powered sleigh</strong> 🛷💰, and the result? <strong>A show that's all about resource mastery!</strong><br />
+  <strong><span style="color: #ff9900;">⚙️ Imagine EC2 instances gracefully following preset schedules</strong> like a well-choreographed <strong>dance routine!</strong> 💃 With a <strong>wave of digital fairy dust ✨,</strong> we make <strong>starting and stopping of instances like a walk in the cloud park.</strong><br />
+
+  <strong><span style="color: #ff9900;">✨ Resource management levels up, costs take a backseat in our cloud-powered sleigh</strong> 🛷💰, and the result? <i>A show that's all about resource mastery!</i><br />
     
   <strong><span style="color: #ff9900;">🔮 Oh, but there's more to this tech tale!</span></strong> Our <strong>automated instance maestros also double as security guardians</strong> 🛡️, orchestrating a <strong>symphony of operational efficiency.</strong> It's like having a team of <strong>virtual superheroes at your service!</strong> 🦸‍♂️🌟<br />
     
@@ -69,22 +71,17 @@
  </div>
 
 <div style="text-align: justify;">
-  <p>
-    <strong>🪐 Ready to discover the wizardry behind automating start and stop processes for EC2 instances</strong>? Here's why it's like having your own spellbook of benefits:
-  
-  <ul>
-    <li>🧙‍♂️ <strong>Cost Savings: Watch as your AWS costs shrink faster than a disappearing rabbit!</strong> With instances powered on only during working hours, you'll wave goodbye to wasteful spending and say hello to savings. 🐇💰</li>
-    <li>🪄 <strong>Resource Efficiency:</strong> Our magic wands... uh, I mean, automation ensures that instances appear precisely when you need them. <strong>No more ghostly underutilization or monstrous overprovisioning!</strong> 🪄✨</li>
-    <li>🛡️ <strong>Enhanced Security:</strong> Who needs a guardian spell when instances can vanish and reappear? <strong>Automatically stopping instances during off-hours keeps those pesky security threats at bay and You can finally become the sorcerer of safety!</strong> 🔐🌙</li>  
-    <li>🌿 <strong>Environment-Friendly:</strong> By turning off instances during non-working hours, <strong>we're not just saving gold; we're saving the planet!</strong> Join us on the eco-friendly quest for a greener cloud. 🌍🌱</li>
-    <li>🌀 <strong>Streamlined Operations:</strong> Tired of manual toil? The automated spells mean <strong>instances are always ready for action. No more manual incantations</strong>—just smooth sailing on the automation breeze! 🌬️🌀</li>
+   🪐 Ready to discover the wizardry behind automating start and stop processes for EC2 instances? <strong>Here's why it's like having your own spellbook of benefits:</strong>
+  <ul><br>
+    <li>🧙‍♂️ <strong>Cost Savings:</strong> Watch as your AWS costs shrink faster than a disappearing rabbit! With instances powered on only during working hours, <strong>you'll wave goodbye to wasteful spending and say hello to savings</strong>. 🐇💰</li><br>
+    <li>🪄 <strong>Resource Efficiency:</strong> Our magic wands... uh, I mean, automation ensures that instances appear precisely when you need them. <strong>No more ghostly underutilization or monstrous overprovisioning!</strong> 🪄✨</li><br>
+    <li>🛡️ <strong>Enhanced Security:</strong> Who needs a guardian spell when instances can vanish and reappear? <strong>Automatically stopping instances during off-hours keeps those pesky security threats at bay</strong>. You become <strong>the sorcerer of safety</strong>! 🔐</li><br>  
+    <li>🌿 <strong>Environment-Friendly:</strong> By turning off instances during non-working hours, we're <strong>not just saving gold; we're saving the planet!</strong> Join us on the eco-friendly quest for a greener cloud. 🌍🌱</li><br>
+    <li>🌀 <strong>Streamlined Operations:</strong> Tired of manual toil? The automated spells mean <strong>instances are always ready for action. No more manual incantations</strong>—just smooth sailing on the automation breeze! 🌬️🌀</li><br>  
     <li>🌎 <strong>Global Team Collaboration: Whether you're in a different time zone or dimension, our automated magic bridges the gaps.</strong> Collaborate effortlessly and conjure teamwork without timezone troubles! 🌐🤝</li>
   </ul>
-  </p>
-  
-  <p>So, there you have it! 🎩✨ Embrace the marvels of effective EC2 management through automated start and stop schedules. It's like having your very own magical carpet ride of cost savings, efficiency, security, and collaboration. Let's weave this spell together for an enchanted AWS adventure!</p>
+So, there you have it! 🎩✨ Embrace the marvels of effective EC2 management through automated start and stop schedules. <strong>It's like having your very own magical carpet ride of cost savings, efficiency, security, and collaboration</strong>. <i>Let's weave this spell together for an enchanted AWS adventure!</i>
 </div>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,11 +173,11 @@ EventBridge seamlessly integrates with various AWS services, including AWS SaaS 
  </div>
 
 **Oh, absolutely!**
-Knowledge is power, and I'm glad you appreciated the importance of understanding the services we're about to work with! 🚀 But don't worry, I won't bore you with any more details. Let's dive straight into the real magic of this project! 🧙‍♀️ No more delays, no more jibber-jabber - it's time for the fun stuff! 🎉
+Knowledge is power, and I'm glad you appreciated the importance of understanding the services we're about to work with! 🚀 **But, don't worry, I won't bore you with any more details**. *Let's dive straight into the real magic of this project!* 🧙‍♀️ No more delays, no more jibber-jabber - it's time for the fun stuff! 🎉
 
-**Get ready to wield your AWS wand 🪄 and unleash the power of automated EC2 management!** 💻 Let's make those instances start and stop like they've never done before! No more manual tinkering - we'll do it all with a flick of the finger! ✨💫
+**Ready your AWS wand 🪄 and unleash automated EC2 mastery!** 💻 Let's conjure instance magic like never before - *no manual fuss, just finger-flicking finesse!* ✨💫
 
-So, grab your coffee, put on your wizard hat (if you have one), and let's rock and roll! 🧙‍♀️🎩 I promise I won't waste any more of your precious time. It's time to make AWS dance to our tune! 💃🕺
+So, grab your coffee, don your wizard hat (*if you've got it*), and let's rock! 🧙‍♀️🎩 *No more dawdling - AWS is about to dance to our tune!* 💃🕺 Time's precious, let's get enchanting! ⏳🔮
 
 <!-- PREREQUISITES -->
 ## Prerequisites: Gearing Up for the Enchantment
@@ -189,23 +186,23 @@ Alrighty then! Before we embark on this exciting journey of EC2 management, let'
 
 <b>Step 1: AWS Account - The Key to the Cloud!</b>
 <br />
-An AWS account is your ticket to the magical realm of cloud computing! If you don't have one yet, go ahead and create an account - it's your passport to all the AWS goodness! 🧙‍♂️
+An AWS account is your ticket to the magical realm of cloud computing! If you don't have one yet, *go ahead and create an account* - **it's your passport to all the AWS goodness!** 🧙‍♂️
 
 <b>Step 2: Familiarity with AWS Console - Know Your Way Around!</b>
 <br />
-While I'll make the process as easy as waving a wand, having some familiarity with the AWS Console will make your adventure even smoother! 🧭 If you're not already acquainted, take a quick stroll around the console to feel more at home.
+While I'll make the process as easy as waving a wand, having some familiarity with the AWS Console will make your adventure even smoother! 🧭 *Take a stroll through the console, no rush!* 🚶‍♂️ If things seem unfamiliar, don't sweat it – **this project is your beginner's guide**. Embrace the learning curve and let's dive in together! 🚀🌟.
 
 <b>Step 3: EC2 Instances with Necessary Tags - Our Secret Sauce!</b>
 <br />
-Ah, here's a crucial one! Make sure you have some EC2 instances already running with special tags - the magic words that will let our Lambda function know which instances to start and stop! ✨🏷️ These tags are like secret handshakes for our instances.
+Ah, here's a crucial one! Make sure you have some EC2 instances already running with ''special tags'' - *the magic words that will let our Lambda function know which instances to start and stop!* ✨🏷️ **These tags are like secret handshakes for our instances**.
 
-But wait, don't fret - I won't leave you hanging! I'll make sure you have the right tags in place before any magic happens! No accidental mass shutdowns, I promise! 😄
+But wait, don't fret - I won't leave you hanging! I'll make sure you have the right tags in place before any magic happens! **No accidental mass shutdowns, I promise!** 😄
 
 <b>You can work your magic and check the enchanting world of EC2 tags following the steps outlined in this mystical document [here]().</b>
 
-Now that we've got all our prerequisites sorted, we're ready to rock and roll with EC2 management like never before! 🎉🚀 Let's dive in and hey, if you have any questions, feel free to ask - I'm here to make your EC2 management adventure a delightful one! 🌈🧁
+Now that, **we've got all our prerequisites sorted**, we're ready to rock and roll with EC2 management like never before! 🎉🚀 Let's dive in and hey, if you have any questions, feel free to ask - **I'm here to make your EC2 management adventure a delightful one!** 🌈🧁
 
-So, buckle up, and let's begin this fantastic journey into the world of automated EC2 magic! 🧙‍♀️✨
+**So, buckle up, and let's begin this fantastic journey into the world of automated EC2 magic!** 🧙‍♀️✨
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,45 +237,35 @@ To weave this enchanting solution, follow these mystical steps:
 <br />
 -> Craft an **enchanted IAM role** with the **perfect permissions** for your Lambda function. Make sure to follow the ancient wizarding wisdom of **"least privilege"** to keep everything secure!
 
-To craft our **IAM role**, conjure forth the mighty [IAM Policy]() and unlock its powers! 🧙‍♂️🔒✨
+Summon the formidable [Create IAM Role]() document – **the key to unlocking its enchanted powers!** 
 
 <b>Step 2: Create the Lambda Magic</b> ✨🧙‍♂️ 
 <br />
 -> Conjure up a **brand-new Lambda function**. Choose your **preferred spell (Python, Node.js)** or any magic language to weave the code logic that'll control those EC2 instances with a flick of your wand! 🪄🎩
 
-Delve into the enchanting world of the [Lambda Function]() example, where the magic of automation unfolds before your very eyes! 🧙‍♂️✨
+Delve into the enchanting world of the [Creating Lambda Function]() , **where the magic of automation unfolds before your very eyes!** 🧙‍♂️✨
 
 <b>Step 3:Wizardry Testing and Validation</b>🧪🧹
 <br />
--> Unleash the full potential of your **Lambda spell** by taking it for an exhilarating test run! Try various **Key:Value pairs** to witness its mastery in STARTING and STOPPING the right EC2 instance/instances! 🚀🧪🔑✨
+-> Unleash the **full potential of your Lambda spell by taking it for an exhilarating test run!** Try various **Key:Value pairs** to *witness its mastery in STARTING and STOPPING the right EC2 instance/instances!* 🚀🧪🔑✨
 
-Marvel at the **enchanting secrets** within the [How to do our Lambda Test]() file as it unveils the mysteries of Lambda testing in a single glimpse! ✨📂
+Marvel at the **enchanting secrets** within the [Creating Lambda function]() file as it unveils the mysteries of Lambda testing in a single glimpse! ✨📂
 
-<b>Step 4: Summon the EventBridge Rules</b>🔮🗓️
+<b>Step 4: Summon the EventBridge Schedules</b>🔮🗓️
 <br />
--> Prepare your magic scrolls and create EventBridge rules. Enchant them with the **perfect schedule or event patterns**, and command them to trigger your **Lambda function's mystical powers**!
+-> Prepare your magic scrolls and create EventBridge schedules. Enchant them with the **perfect schedule or event patterns**, and command them to trigger your **Lambda function's mystical powers**!
 
-Behold! 🕰️📅 Follow the steps to create an EventBridge Schedule and get to enjoy the efforts you've done till now. Always **double-check its accuracy by gazing into the future and observing the next trigger dates. ✨🌟
+Behold! 🕰️📅 Follow the steps mentioned in the document [here]() to **craft your EventBridge Schedule** and **relish the fruits of your labor**! ✨ **Always ensure accuracy by peeking into the future and observing trigger dates**. It's like having a crystal ball for your project's success! 🔮📅
 
 <b>Step 5: CloudWatch Charm:</b> 🔍👁️‍🗨️
 <br />
--> Use the magical CloudWatch to cast spells of monitoring and tracking. Watch closely as it reveals the secrets of your Lambda's performance and keeps an eye on any mischievous gremlins!
+-> Use the **magical CloudWatch to cast spells of monitoring and tracking**. Watch closely as it **reveals the secrets of your Lambda's performance** and **keeps an eye on any mischievous gremlins**!
 
 <b>Step 6: Dance of Automation:</b> 🎉💰💫
 <br />
--> Watch in wonder as your EC2 instances dance to the rhythm of automation! Celebrate the benefits of cost savings, resource efficiency, and all the magic this spell has brought to your cloud journey!
+-> Watch in wonder as **your EC2 instances dance to the rhythm of automation**! Celebrate the benefits of cost savings, resource efficiency, and all the magic this spell has brought to your cloud journey!
 
 **With these whimsical steps, you've mastered the art of "Automatically Start and Stop EC2 Instances." Now, embrace the magic, and may your cloud adventures be full of enchantment and laughter! 🌈🧚‍♂️🌟**
-
-<p align="center">
-    <a href="https://github.com/divya06122001/AWS_Projects/tree/main/LambdaEC2StartStopAutomatically"><strong>Explore the docs »</strong></a>
-    <br />
-    ·  
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-  </p> 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -289,7 +276,7 @@ Behold! 🕰️📅 Follow the steps to create an EventBridge Schedule and get t
  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Conclusion.jpg" alt="Logo" width="700" height="400">
  </div>
 
-**Congratulations**, fellow cloud enchanters! You've now unlocked the secrets of "Automatically Start and Stop EC2 Instances" using AWS Lambda and Amazon EventBridge. 🪄🚀
+**Congratulations**, fellow cloud enchanters! **You've now unlocked the secrets of Automatically Start and Stop EC2 Instances using AWS Lambda and Amazon EventBridge**. 🪄🚀
 
 As we **bid adieu** to this magical journey, remember that **cloud sorcery is all about creativity and curiosity**. Embrace the playful spirit of experimentation and continue to weave your own unique spells in the enchanted world of AWS! 🌟🧙‍♀️
 

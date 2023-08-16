@@ -235,7 +235,7 @@ To weave this enchanting solution, follow these mystical steps:
 
 <b>Step 1: IAM Enchantments</b> 🔒🧙‍♀️ 
 <br />
--> Craft an **enchanted IAM role** with the **perfect permissions** for your Lambda function. Make sure to follow the ancient wizarding wisdom of **"least privilege"** to keep everything secure!
+-> Craft an **enchanted IAM role** with the **perfect permissions** for your Lambda function which is mentioned in **[IAM policy](https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/IAM_Policy_for_Lambda.json)**. Make sure to follow the ancient wizarding wisdom of **"least privilege"** to keep everything secure!
 
 Summon the formidable [Create IAM Role](https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%201%20-%20Create%20IAM%20Role.docx) document – **the key to unlocking its enchanted powers!** 
 

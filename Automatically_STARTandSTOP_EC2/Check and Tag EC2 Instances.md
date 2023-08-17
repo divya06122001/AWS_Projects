@@ -1,6 +1,6 @@
 <h1 align= "center">Check and Add "Tags" on individual EC2 Instances</h1>
 <div align="center">
-  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Amazon+EC2.jpg" alt="Logo" width="500" height="350">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/AWS+EC2+Tags.jpeg" alt="Logo" width="700" height="350">
  </div>
  <br />
  

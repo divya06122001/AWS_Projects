@@ -1,22 +1,21 @@
-<h1 align= "center">Creating IAM Role</h1>
+<h1 align= "center">Creating our IAM Role using Custom Trust Policy</h1>
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/IAM+Role.png" alt="Logo" width="800" height="400">
 </div>
 <br />
+<h2 align= "left">Creating IAM policies using the JSON editor</h2>
 <ol>
-  <li>Open the <strong>IAM console</strong> from <a href="IAM_Console_Link">here</a>.</li>
+  <li>Sign in to the <strong>AWS Management Console</strong> and open the <strong>IAM console</strong> at https://console.aws.amazon.com/iam/
   <li>Upon accessing the <strong>IAM Dashboard</strong>, you'll be presented with a view like the one shown below:</li>
 <br>  
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/IAM+Dashboard.png" alt="Logo" width="800" height="400">
 </div>
 <br>
-  
-  <li>To <strong>create a role</strong>, we have the option to either <strong>create a custom IAM policy</strong> first or select from the <strong>available AWS managed policies</strong>.</li>
-  <li>We are going to <em>create policy first</em> so as to keep the steps simple.</li>
-  <li>In the left navigation pane, choose <strong>Policies</strong>.</li>
+  <li>In the navigation pane on the left, choose <strong>Policies</strong>.</li>
   <li>Choose <strong>Create policy</strong>.</li>
-  <li>Click on <strong>JSON</strong>, copy the <strong>IAM Policy from the GitHub</strong> <a href="IAM_Console_Link">here</a>, and paste it in the open policy editor for further use.</li>
+  <li>In the <strong>Policy editor</strong> section, choose the <strong>JSON</strong> option.
+  <li>Copy the <strong>IAM Policy</strong> from <a href="IAM_Console_Link">here</a>, and paste it in the open policy editor. For details about the IAM policy language, see <a href="IAM_Console_Link">IAM JSON policy reference</a>.</li>
   <li>Ensure there are <strong>no syntax errors</strong> <em>(unlikely but just in case)</em> and remove any if found, then click on the <strong>Next</strong> tab.</li>
   <li>A window will open named as <strong>Review and create</strong>.</li>
   <li>

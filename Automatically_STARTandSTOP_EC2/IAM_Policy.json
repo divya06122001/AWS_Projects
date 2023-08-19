@@ -23,10 +23,21 @@
             "Resource": "arn:aws:logs:*:*:*"
         },
         {
-            "Sid": "lambdapermissions",
+            "Sid": "LambdaInvokePermission",
             "Effect": "Allow",
-            "Action": "lambda:InvokeFunction",
+            "Action": "Lambda:InvokeFunction",
+            "Resource": "arn:aws:lambda:ap-south-1:973918325246:function:LambdaEC2_STARTandSTOP_Function"
+        },
+        {
+            "Sid": "EventBridgePermissions",
+            "Effect": "Allow",
+            "Action": [
+                "events:PutEvents",
+                "events:PutRule",
+                "events:DescribeRule",
+                "events:PutTargets"
+            ],
             "Resource": "*"
-        }
+        },
     ]
 }

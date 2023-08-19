@@ -16,14 +16,13 @@
   <li>Choose <strong>Create policy</strong>.</li>
   <li>In the <strong>Policy editor</strong> section, choose the <strong>JSON</strong> option.
   <li>Copy the <strong>IAM Policy</strong> from <a href="IAM_Console_Link">here</a>, and paste it in the open policy editor. For details about the IAM policy language, see <a href="IAM_Console_Link">IAM JSON policy reference</a>.</li>
-  <li>Ensure there are <strong>no syntax errors</strong> <em>(unlikely but just in case)</em> and remove any if found, then click on the <strong>Next</strong> tab.</li>
+  <li>Resolve any <strong>security warnings, errors, or general warnings</strong> generated during policy validation <em>(unlikely but just in case)</em>.</li>
+  <li>Once you've finished adding permissions to the policy, choose <strong>Next</strong>.</li>
   <li>A window will open named as <strong>Review and create</strong>.</li>
-  <li>
-    <ul>
-      <li>For <strong>Name</strong>, provide a name for your IAM Policy (e.g., “EC2_StartandStop_Policy” or “IAMPolicy_STARTINGandSTOPPING_EC2”).</strong></li>.<em> You’re going use this name when you’ll create an IAM role to associate with your Lambda Function</em>.</li>
-  <li>Please verify if all the mentioned services, including EC2, CloudWatch Logs, EventBridge and Lambda, are listed under the 'permissions defined in this policy' tab.</li>
+  <li>On the <strong>Review and create</strong> page, provide a <strong>Policy Name</strong> <em>(e.g., “EC2_StartandStop_Policy” or “IAMPolicy_STARTINGandSTOPPING_EC2”)</em> and a <strong>Description (optional)</strong> for the policy that you are creating.</li>
+  <li> Review <strong>Permissions defined in this policy</strong> to see the permissions that are granted by policy. <em>Please verify if all the mentioned services, including <strong>EC2, CloudWatch Logs, Lambda and EventBridge</strong> are listed</em>.</li>
   <li>Adding tags is optional, but you have the flexibility to use them as per your requirements.</li>
-  <li>Choose Create policy.</li>
+  <li>Choose <strong>Create policy</strong> to save your new policy.</li>
   <li>After completing these steps, you’ll encounter a window identical to the one shown previously in Step 5. The created policy will also be displayed in this window this time.</li>
   <li>In the navigation pane, choose Roles.</li>
   <li>Choose Create role.</li>

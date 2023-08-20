@@ -22,27 +22,20 @@
     <ul>
       <li>For <strong>Occurrence</strong>, choose <strong>Recurring schedule</strong> (This schedule is going to run on and on every week, every month, and every year).</li>
       <li>For <strong>Schedule type</strong>, choose <strong>Cron-based schedule</strong> (This schedule will run at specific time in the morning and evening).</li>
-      <li>For <strong>Cron expression</strong>,
-      <div align="center">
+      <li>For <strong>Cron expression</strong>, fill as below:
 
-| Minutes | Hours | Day of Month | Month | Day of the Week | Year |
-|---------|:-----:|--------------|-------|:---------------:|------|
-|   30    |   8   |      ?       |   *   |      2-6        |  *   |
-      
-</div>
-
-<div align="center">
-
+<div align="left">
+<br>
 <table style="border-collapse: collapse; border: 2px solid #444;">
   <tr>
     <th>Minutes</th>
-    <th style="border: 1px solid #444;">Hours</th>
+    <th style="border: 1px solid #444; padding: 6px 12px;">Hours</th>
     <th>Day of Month</th>
     <th>Month</th>
-    <th style="border: 1px solid #444;">Day of the Week</th>
+    <th style="border: 1px solid #444; padding: 6px 12px;">Day of the Week</th>
     <th>Year</th>
   </tr>
-  <tr>
+  <tr align="center">
     <td>30</td>
     <td style="border: 1px solid #444;">8</td>
     <td>?</td>
@@ -50,10 +43,10 @@
     <td style="border: 1px solid #444;">2-6</td>
     <td>*</td>
   </tr>
-</table>
-
+ </table>
 </div>
-
+    </li>
+</ul>
 
 <strong>Please note</strong> that the <strong><em>question mark (?)</em></strong> represents <strong><em>no specific value</em></strong>, the <strong><em>asterisk (*)</em></strong> represents <strong><em>any value</em></strong> and the <strong><em>hyphen (-)</em></strong> represents <strong><em>a range</em></strong>.
 

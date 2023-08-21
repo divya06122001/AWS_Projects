@@ -20,19 +20,66 @@
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/IAM+Policy+Dashboard.png" alt="IAM Policy Dashboard" width="800" height="400">
 </div>
 <br>
-  <li>Choose <strong>Create policy</strong>.</li>
+  <li>Choose <strong>Create policy</strong> to begin creating a new policy.</li>
 <br>  
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/Create+Policy.png" alt="IAM Policy - Create Policy" width="800" height="400">
 </div>
 <br>
-  <li>Choose the <strong>JSON</strong> option.</li>
+  <li>Select the <strong>JSON</strong> tab to open the policy editor.</li>
 <br>  
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/Choosing+JSON.png" alt="IAM Policy - JSON" width="950" height="400">
-</div>
+</div> 
 <br>
-  <li>Copy the <strong>IAM Policy</strong> from <a href="https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/IAM_Policy.json">here</a>, and paste it in the open policy editor. For details about the IAM policy language, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies.html">IAM JSON policy reference</a>.</li>
+  <li> In the <strong>Policy editor</strong> section, select the existing statement and delete it. Paste the provided JSON policy snippet into the <strong>Policy editor</strong>.</li>
+ 
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "EC2Access",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:DescribeInstanceStatus"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "CloudWatchLogsAccess",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        },
+        {
+            "Sid": "EventBridgePermissions",
+            "Effect": "Allow",
+            "Action": [
+                "events:PutEvents",
+                "events:PutRule",
+                "events:DescribeRule",
+                "events:PutTargets"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "LambdaInvokePermission",
+            "Effect": "Allow",
+            "Action": "Lambda:InvokeFunction",
+            "Resource": "*"
+        }, 
+    ]
+}
+```
+
   <li>Once added, it will resemble the image below for your reference.</li>
 <br>  
 <div align="center">
@@ -86,7 +133,28 @@
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/Choose+Custom+trust+policy.png" alt="IAM Role - Custom trust policy" width="800" height="400">
 </div>
 <br>
-  <li>In the <strong>Custom trust policy</strong> section, select and delete the existing statement. After that, paste the custom trust policy for the role as provided <a href= "https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Custom%20trust%20policy.txt">here</a>.</li>
+  <li>In the <strong>Custom trust policy</strong> section, select the existing statement and delete it. Paste the provided custom trust policy JSON snippet into the <strong>Custom trust policy</strong> editor.</li>
+  
+  ```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": [
+                    "lambda.amazonaws.com",
+                    "scheduler.amazonaws.com"
+                ]
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
+```
+
+This policy grants permission to both <strong>AWS Lambda and AWS EventBridge services to assume the role</strong>, allowing them to <em>perform role-related actions</em> specified by <strong>"sts:AssumeRole"</strong>. This is a crucial step in setting up the required trust relationship for the IAM Role.
+
   <li>Resolve any <em>security warnings, errors, or general warnings</em> generated during policy validation, and then choose <strong>Next</strong>.</li>
 <br>  
 <div align="center">

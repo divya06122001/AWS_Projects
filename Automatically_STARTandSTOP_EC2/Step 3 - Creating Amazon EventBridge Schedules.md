@@ -50,8 +50,8 @@
 <li>For <strong>Flexible time window</strong>, choose <strong>Off</strong> to turn off the option.</li><br>
 <li>In the <strong>Timeframe</strong> section, specify your <strong>Timezone</strong>.</li><br>
 <li> It is <em>totally optional</em> to set both the <strong>start date and time</strong> and an <strong>end date and time</strong> for the schedule.</li>
-  <strong>A recurring schedule without a start date will begin as soon as it is created and available.</strong><br>
-  <strong>A recurring schedule without an end date will continue to invoke its target indefinitely.</strong><br>
+<p><strong>A recurring schedule without a start date will begin as soon as it is created and available.</strong> <br><strong>A recurring schedule without an end date will continue to invoke its target indefinitely.</strong></p>
+  
 <li>Choose <strong>Next</strong>.</li><br>
 <li>On the <strong>Select target - <em>optional</em></strong> page, do the following:
   <ul>
@@ -68,29 +68,32 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
   </ul>
 </li>
 
-<li>Choose <strong>Next</strong>, then on the <strong>Settings - <em>optional</em></strong> page, do the following:
+<p><li>Choose <strong>Next</strong>, then on the <strong>Settings - <em>optional</em></strong> page, do the following:</p>
   <ul>
-    <li>In the <strong>Schedule state</strong> section, for <strong>Enable schedule</strong>, you can toggle feature on or off using the switch. The <strong><em>EventBridge Scheduler activates your schedule by default</em></strong>, which is the required behaviour.</li>
-    <li>In the <strong>Action after schedule completion</strong> section, choose <strong>NONE</strong> from the dropdown, as we want <em>EventBridge Scheduler to not take any action after the schedule completes</em>. If you choose <strong>DELETE</strong>, the <em>scheduler will automatically delete the schedule after it has completed its last invocation</em> and has no future target invocations planned.</li>
+    <p><li>In the <strong>Schedule state</strong> section, for <strong>Enable schedule</strong>, you can toggle feature on or off using the switch. The <strong><em>EventBridge Scheduler activates your schedule by default</em></strong>, which is the required behaviour.</li></p>
+   <li>In the <strong>Action after schedule completion</strong> section, choose <strong>NONE</strong> from the dropdown.
+     <ul>
+       <p><li>If you choose <strong>NONE</strong>, the <strong>EventBridge Scheduler will not take any action</strong> after the schedule completes.</li></p>
+       <p><li>If you choose <strong>DELETE</strong>, the <strong>scheduler will automatically delete the schedule</strong> after it has completed its last invocation and has no future target invocations planned.</li></p>
+     </ul>
+   </li>
     <li>In the <strong>Retry policy and dead-letter queue (DLQ)</strong> section, keep all settings as default, but make sure to verify that the values are set to their maximum limits. 
       <ul>
-        <li>For <strong>Maximum age of event - <em>optional</em></strong>: <strong>24 hours and 0 minutes</strong> so that <em>EventBridge Scheduler must keep an unprocessed event for 24 hours</em>.</li>
-        <li>For <strong>Retry attempts - <em>optional</em></strong>: <strong>185 times</strong> so that <em>EventBridge Scheduler retries the schedule if the target returns an error for 185 times</em>.</li>
-        <li>For <strong>Dead-letter queue (DLQ)</strong>: <strong>None</strong> as we don't want to configure a DLQ now. A Dead-Letter Queue (DLQ) is used to <em>handle messages that fail processing, ensuring proper handling and analysis of problematic messages</em>.</li>
-        <li>For <strong>Encryption</strong>: Leave it unbothered.</li>
-        <li>Scroll down to <strong>Permissions</strong> section and choose <strong>Use existing role</strong>, since we have already created an IAM role with the necessary permissions.</li>
-        <li>From the drop-down, select the <em>IAM role</em> that we've made previously.</li>
+        <p><li>For <strong>Maximum age of event - <em>optional</em></strong>: <strong>24 hours and 0 minutes</strong> so that <em>EventBridge Scheduler must keep an unprocessed event for 24 hours</em>.</li></p>
+        <p><li>For <strong>Retry attempts - <em>optional</em></strong>: <strong>185 times</strong> so that <em>EventBridge Scheduler retries the schedule if the target returns an error for 185 times</em>.</li></p>
+        <p><li>For <strong>Dead-letter queue (DLQ)</strong>: <strong>None</strong> as we don't want to configure a DLQ now. A Dead-Letter Queue (DLQ) is used to <em>handle messages that fail processing, ensuring proper handling and analysis of problematic messages</em>.</li></p>
+        <p><li>For <strong>Encryption</strong>: Leave it unbothered.</li></p>
+        <p><li>Scroll down to <strong>Permissions</strong> section and choose <strong>Use existing role</strong>, since we have already created an IAM role with the necessary permissions.</li></p>
+        <p><li>From the drop-down, select the <em><strong>IAM role</strong></em> that we've made previously.</li></p>
       </ul>
     </li>
 
 <li>Choose <strong>Next</strong>.</li><br>
-<li>In the <strong>Review and create schedule</strong> page, review the details of your schedule. In each section, you can choose Edit to go back to that step and edit its details.</li><br>
+<li>In the <strong>Review and create schedule</strong> page, review the details of your schedule. In each section, you can choose <strong>Edit</strong> to go back to that step and edit its details.</li><br>
 <li>Choose <strong>Create schedule</strong> to finish creating your new schedule.</li><br>
 <li>You can view a list of your new and existing schedules on the <strong>Schedules</strong> page. Under the <strong>Status</strong> column, verify that the new schedule is <strong>Enabled</strong>.</li><br>
-<strong>NOTE:</strong><br>
-To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status the EC2 around set trigger time.<br> 
-<p align= "center">OR</p>
-You can also check CloudWatch logs for more information.
+<li>To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status of the EC2 instance around the set trigger time i.e., 8:30 AM in the morning.</li><br> 
+<li>You can also check <strong>CloudWatch logs</strong> for a more detailed version.
 
 
 

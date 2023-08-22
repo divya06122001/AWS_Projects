@@ -21,9 +21,7 @@
       <li>For <strong>Occurrence</strong>, choose <strong>Recurring schedule</strong> (This schedule is going to run on and on every week, every month, and every year).</li>
       <li>For <strong>Schedule type</strong>, choose <strong>Cron-based schedule</strong> (This schedule will run at specific time in the morning and evening).</li>
       <li>For <strong>Cron expression</strong>, fill as below:
-
 <div align="left">
-<br>
 <table style="border-collapse: collapse; border: 2px solid #444;">
   <tr>
     <th>Minutes</th>
@@ -50,8 +48,10 @@
 
 <li>To verify the accuracy of the cron expressions, check the <strong>next 10 trigger dates</strong>.</li><br>
 <li>For <strong>Flexible time window</strong>, choose <strong>Off</strong> to turn off the option.</li><br>
-<li>In the <strong>Timeframe</strong> section, specify your <strong>Timezone</strong>, and optionally set a <em>start and an end date and time</em> for the schedule.</li><br>
-<strong>NOTE:</strong> A recurring schedule without a start date will begin as soon as it is created and available and a recurring schedule without an end date will continue to invoke its target indefinitely.<br>
+<li>In the <strong>Timeframe</strong> section, specify your <strong>Timezone</strong>.</li><br>
+<li> It is <em>totally optional</em> to set both the <strong>start date and time</strong> and an <strong>end date and time</strong> for the schedule.</li>
+  <strong>A recurring schedule without a start date will begin as soon as it is created and available.</strong><br>
+  <strong>A recurring schedule without an end date will continue to invoke its target indefinitely.</strong><br>
 <li>Choose <strong>Next</strong>.</li><br>
 <li>On the <strong>Select target - <em>optional</em></strong> page, do the following:
   <ul>
@@ -87,8 +87,10 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
 <li>In the <strong>Review and create schedule</strong> page, review the details of your schedule. In each section, you can choose Edit to go back to that step and edit its details.</li><br>
 <li>Choose <strong>Create schedule</strong> to finish creating your new schedule.</li><br>
 <li>You can view a list of your new and existing schedules on the <strong>Schedules</strong> page. Under the <strong>Status</strong> column, verify that the new schedule is <strong>Enabled</strong>.</li><br>
-<strong>NOTE:</strong> To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status the EC2 around set trigger time.<> OR
-  You can also check CloudWatch logs for more information.
+<strong>NOTE:</strong><br>
+To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status the EC2 around set trigger time.<br> 
+<p align= "center">OR</p>
+You can also check CloudWatch logs for more information.
 
 
 

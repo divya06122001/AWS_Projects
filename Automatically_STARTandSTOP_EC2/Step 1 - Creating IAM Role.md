@@ -7,7 +7,7 @@
 
 <h2 align= "left">Creating IAM policies using the JSON editor</h2>
 <ol>
-  <li>Sign in to the <strong>AWS Management Console</strong> and open the <strong>IAM console</strong> at https://console.aws.amazon.com/iam/ .
+  <li>Sign in to the <strong>AWS Management Console</strong> and open the <strong>IAM console</strong> from <a href= "https://console.aws.amazon.com/iam/">here</a>.</li>
   <li>Upon accessing the <strong>IAM Dashboard</strong>, you'll be presented with a view like the one shown below:</li>
 <br>  
 <div align="center">
@@ -60,6 +60,12 @@
             "Resource": "arn:aws:logs:*:*:*"
         },
         {
+            "Sid": "LambdaInvokePermission",
+            "Effect": "Allow",
+            "Action": "Lambda:InvokeFunction",
+            "Resource": "*"
+        },
+        {
             "Sid": "EventBridgePermissions",
             "Effect": "Allow",
             "Action": [
@@ -69,16 +75,12 @@
                 "events:PutTargets"
             ],
             "Resource": "*"
-        },
-        {
-            "Sid": "LambdaInvokePermission",
-            "Effect": "Allow",
-            "Action": "Lambda:InvokeFunction",
-            "Resource": "*"
-        }, 
+        }
     ]
 }
 ```
+
+This policy grants the permissions including <strong><em>describing EC2 instances, starting and stopping EC2 instances, managing CloudWatch Logs, invoking Lambda functions, and interacting with AWS EventBridge (CloudWatch Events) to put events, create rules, and manage targets</em></strong> to AWS services, <strong>Lambda and EventBridge</strong>.
 
   <li>Once added, it will resemble the image below for your reference.</li>
 <br>  
@@ -189,6 +191,10 @@ This policy grants permission to both <strong>AWS Lambda and AWS EventBridge ser
 </div>
 <br />
 
+<p>
+<strong>Note:</strong> While I have consolidated permissions into a single policy and role for simplicity, it's recommended to <strong><em>create separate policies and roles for Lambda and EventBridge</em></strong>, outlining specific permissions for each. This ensures a more granular and organized access control approach.
+</p>
+<br />
 
 <p align= "center"><strong><em>🌟🌈 And there you have it! Your IAM role is now fully prepared for action. 🚀 Embrace the power of automation and code confidently, knowing that your role is set up to orchestrate tasks seamlessly. Happy coding and automating! 💻🤖</em></strong></p>
 

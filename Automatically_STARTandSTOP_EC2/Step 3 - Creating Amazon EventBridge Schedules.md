@@ -12,21 +12,22 @@
 <li><strong>For those who are completely new to AWS and just starting out</strong>, on the top-right corner of the console, you'll see the name of the <strong>current region</strong> you're in. Click on it. A dropdown menu will appear, showing a list of available AWS regions. Select the region you want to switch to from the list.</li><br>
 
 <li>On the <strong>Schedules</strong> page, scroll down and choose <strong>Create schedule</strong>.</li><br>
+<li>You will encounter a window that resembles the one shown below.</li>
+
+<br>
+<div align="center">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/EventBridge+Schedule.png" alt="AWS EventBridge Schedule" width="950" height="350">
+</div>
+<br>
 
 <li>On the <strong>Specify schedule detail</strong> page, in the <strong>Schedule name and description section</strong> do the following:
       <ul>
         <p><li>For <strong>Schedule name</strong>, enter a name for your schedule. For example: <strong>EC2StartEventSchedule</strong>.</li></p>
         <p><li>For <strong>Description - <em>optional</em></strong>, enter a description for your schedule.<br>For example, <strong>A scheduled start event to trigger a Lambda function for initiating the EC2 instance launch</strong>.</li></p>
-        <li>For <strong>Schedule group</strong>, choose a schedule group from the drop-down options. Certainly, you can choose the <strong>default</strong> option if you're new to schedule groups. However, I recommend having a dedicated schedule group for each specific schedule for better organization and management.</li>
-        <li>To <strong>create a new schedule group</strong>, click on the anchor text <strong>"create your own schedule group"</strong> written under the schedule group heading. You use schedule groups to add tags to groups of schedules.</li>
-        To create a new schedule group, click on the anchor text "Create your own schedule" written under the schedule group heading.
+        <li>For <strong>Schedule group</strong>, choose a schedule group from the drop-down options. Certainly, you can choose the <strong>default</strong> option <em>if you haven't created the group beforehand</em>. However, I recommend having a dedicated schedule group <strong><em>(Schedule groups allows you to categorize and organize multiple schedules for better management and control)</em></strong> for each specific schedule.</li>
+        <li>To <strong>create a new schedule group</strong>, click on the anchor text <strong>"create your own schedule group"</strong> written under the schedule group heading.</li>
       </ul>
     </li><br>
-    
-<div align="center">
-  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/EventBridge+Schedule.png" alt="AWS EventBridge Schedule" width="950" height="350">
-</div>
-
 <li>In the <strong>Schedule pattern</strong> section, do the following:
       <ul>
         <p><li>For <strong>Occurrence</strong>, choose <strong>Recurring schedule</strong> (This schedule is going to run on and on every week, every month, and every year).</li></p>
@@ -57,7 +58,13 @@
       </ul>
 </li><br>  
 
-<li>To verify the accuracy of the cron expressions, check the <strong>next 10 trigger dates</strong>.</li><br>
+<br>
+<div align="center">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Schedule+Pattern.png" alt="AWS EventBridge Schedule Pattern" width="950" height="350">
+</div>
+<br>
+
+<li>To verify the accuracy of the cron expressions, check the <strong>next 10 trigger dates</strong> as illustrated in the image above.</li><br>
 <li>For <strong>Flexible time window</strong>, choose <strong>Off</strong> to turn off the option.</li><br>
 <li>In the <strong>Timeframe</strong> section, specify your <strong>Timezone</strong>.</li><br>
 <li> It is <em>totally optional</em> to set both the <strong>start date and time</strong> and an <strong>end date and time</strong> for the schedule.

@@ -8,8 +8,8 @@
 <h2 align= "left">Creating IAM policies using the JSON editor</h2>
 <ol>
  <p><li>Sign in to the <strong>AWS Management Console</strong> and open the <strong>IAM console</strong> from <a href= "https://console.aws.amazon.com/iam/">here</a>.</li></p>
-  <li>Upon accessing the <strong>IAM Dashboard</strong>, you'll be presented with a view like the one shown below:</li>
-<br>  
+ <p><li>Upon accessing the <strong>IAM Dashboard</strong>, you'll be presented with a view like the one shown below:</li></p>
+
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/IAM_Dashboard.png" alt="IAM Dashboard" width="800" height="400">
 </div>

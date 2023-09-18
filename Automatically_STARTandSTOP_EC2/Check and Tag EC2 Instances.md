@@ -25,11 +25,14 @@ EC2 instances are the building blocks of your cloud infrastructure. **By checkin
 </div>
 <br>
 
- <p><li>On the upper right corner, select the <strong>Region</strong> where your EC2 instances are located.</li></p>
-3. In the navigation (left sidebar) pane, expand **Instances** and select **Instances** or you can directly click on **Instances** tab under **Resources** section.
-4. Make sure you click on **Instances** tab rather than **Instances(running)** tab as it will only show *running instances* at that very moment.
-5. Select the instance from the **Instances** window and choose the **Tags** tab.
-6. See below pictures as an **example for both Tagged and Non-Tagged Instances**:
+ <p><li>In the navigation bar, on the upper right corner, choose the name of the currently displayed <strong>Region</strong>. Then, choose the <strong>Region</strong> where your EC2 instances are located.</li></p>
+
+ <p><li>In the navigation pane on left, expand <strong>Instances</strong> and select <strong>Instances</strong> or you can directly choose <strong>Instances</strong> under <strong>Resources</strong> section.</li></p>
+ 
+ <p><li>Make sure you click on <strong>Instances</strong> tab rather than <strong>Instances(running)</strong> tab as it will only show <strong><em>running instances</em></strong> at that very moment.
+   
+ <p><li>Select the instance from the **Instances** window and choose the <strong> Tags</strong> tab.</li></p>
+ <p><li>See below pictures as an **example for both Tagged and Non-Tagged Instances**:</li></p>
 <br>
 
 | EC2 Instances with Tags |

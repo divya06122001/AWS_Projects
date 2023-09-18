@@ -16,13 +16,16 @@ EC2 instances are the building blocks of your cloud infrastructure. **By checkin
   
 <h2 align= "left">To check tags of an individual EC2 instance</h2>
 
-1. Open the **Amazon EC2 console** from [here](https://console.aws.amazon.com/ec2/).
+<ol>
+ <p><li>Sign in to the <strong>AWS Management Console</strong> and open the <strong>Amazon EC2 console</strong> from <a href= "https://console.aws.amazon.com/ec2/">here</a>.</li></p>
+ <p><li>Upon accessing the <strong>IAM Dashboard</strong>, you'll be presented with a view like the one shown below:</li></p>
+  
 <div align="center">
 <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/EC2+Dashboard.png" alt="Logo" width="800" height="400">
 </div>
-<br />
+<br>
 
-2. From the navigation bar, select the **Region** where your EC2 instances are located.
+ <p><li>On the upper right corner, select the <strong>Region</strong> where your EC2 instances are located.</li></p>
 3. In the navigation (left sidebar) pane, expand **Instances** and select **Instances** or you can directly click on **Instances** tab under **Resources** section.
 4. Make sure you click on **Instances** tab rather than **Instances(running)** tab as it will only show *running instances* at that very moment.
 5. Select the instance from the **Instances** window and choose the **Tags** tab.

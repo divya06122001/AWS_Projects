@@ -95,22 +95,22 @@ This policy grants the permissions including <strong><em>describing EC2 instance
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/Review+and+Create.png" alt="IAM Policy - Review and create" width="950" height="400">
 </div>
 <br>  
-  <p><li>On the <strong>Review and create</strong> page, provide a <strong>Policy Name</strong> <em>(e.g., “EC2_StartandStop_Policy” or “IAMPolicy_STARTINGandSTOPPING_EC2”)</em> and a <strong>Description (optional)</strong> for the policy that you are creating.</li></p>
+  <li>On the <strong>Review and create</strong> page, provide a <strong>Policy Name</strong> <em>(e.g., “EC2_StartandStop_Policy” or “IAMPolicy_STARTINGandSTOPPING_EC2”)</em> and a <strong>Description (optional)</strong> for the policy that you are creating.</li>
   <p><li> Review <strong>Permissions defined in this policy</strong> to see the permissions that are granted by policy.</li></p>
   <p><li><strong>Please ensure</strong> that all the specified services, – <strong><em>EC2, CloudWatch Logs, Lambda and EventBridge</em></strong>- are appropriately listed. Verify that they match the image below.</li></p>
-<br>  
+  
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/Check+Permissions.png" alt="IAM Policy - Check Permissions" width="800" height="400">
 </div>
 <br>
-  <p><li><strong>Adding tags is optional</strong>, but you have the flexibility to use them as per your requirements.</li></p>
+  <li><strong>Adding tags is optional</strong>, but you have the flexibility to use them as per your requirements.</li>
   <p><li>Choose <strong>Create policy</strong> to save your newly crafted policy. Once done, you'll see a green flag 🟢🏳️ indicator displaying the policy name you provided, similar to the example shown below.</li></p>
-<br>  
+
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/Created+Policy.png" alt="IAM Policy - Newly Created IAM Policy" width="900" height="350">
 </div>
-<br>
-  <li>You'll also find your newly created policy listed under <strong>Policy name</strong>, conveniently sorted alphabetically.</li>
+
+  <p><li>You'll also find your newly created policy listed under <strong>Policy name</strong>, conveniently sorted alphabetically.</li></p>
 </ol>
 <br>
 
@@ -176,8 +176,8 @@ This policy grants permission to both <strong>AWS Lambda and AWS EventBridge ser
   <li>Choose <strong>Next</strong>.</li><br>
   <li>In <strong>Name, review, and create</strong> window under Role details section, fill following:
     <ul>
-      <p><li><strong>Role name:</strong> Enter a name for your IAM role, for example “EC2_StartandStop_Rule” or “IAMRole_STARTINGandSTOPPING_EC2”.</li></p>
-      <p><li>Role names need to be different from each other in your AWS account, regardless of whether they are in uppercase or lowercase. Once a role is created, its name cannot be changed.</li></p>
+      <p><li><strong>Role name:</strong> Enter a name for your IAM role, for example “<strong>EC2_StartandStop_Rule</strong>” or “<strong>IAMRole_STARTINGandSTOPPING_EC2</strong>”.</li></p>
+      <p><li><em>Role names need to be different from each other in your AWS account</em>, regardless of whether they are in <strong>UPPERCASE</strong> or <strong>lowercase</strong>. Once a role is created, its name cannot be changed.</li></p>
       <li><strong>Description:</strong> You can write a short and clear description for this role to help you quickly understand its purpose when you look at it again. But, it is totally optional.</li>
     </ul>
   </li><br>
@@ -189,9 +189,9 @@ This policy grants permission to both <strong>AWS Lambda and AWS EventBridge ser
 <br>
   <li>You can select <strong>Edit</strong> in either the <strong>Step 1: Select trusted entities</strong> or <strong>Step 2: Add permissions</strong>  sections to modify the custom policy and permissions for the role, but remember to make edits only if needed to maintain the role's alignment with your requirements.</li><br>
   <li>Review the role and then choose <strong>Create role</strong>.</li><br>
-  <li>After completing these steps, you'll once again be greeted by a green flag 🟢🏳️ indicator, displaying the role name you provided – just like you observed when you created the IAM policy. Your newly created policy will be conveniently listed under <strong>Role name</strong>, thoughtfully sorted in alphabetical order. </li>
+  <li>After completing these steps, you'll once again be greeted by a green flag 🟢🏳️ indicator, displaying the role name you provided – just like you observed when you created the IAM policy. Your newly created policy will be conveniently listed under <strong>Role name</strong>, thoughtfully sorted in alphabetical order.</li>
 </ol>
-
+<br>
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/Created+Role.png" alt="IAM Role - Newly Created IAM Role" width="950" height="350">
 </div>
@@ -202,5 +202,5 @@ This policy grants permission to both <strong>AWS Lambda and AWS EventBridge ser
 </p>
 <br />
 
-<p align= "center"><strong><em>🌟🌈 And there you have it! Your IAM role is now fully prepared for action. 🚀 Embrace the power of automation and code confidently, knowing that your role is set up to orchestrate tasks seamlessly. Happy coding and automating! 💻🤖</em></strong></p>
+<p align= "center"><strong><em>🌟Hurray, you have it! Your IAM role is now fully prepared for action. 🚀 Embrace the power of automation and code confidently, knowing that your role is set up to orchestrate tasks seamlessly. Happy coding and automating! 💻🤖</em></strong></p>
 

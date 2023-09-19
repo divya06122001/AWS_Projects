@@ -25,15 +25,16 @@ EC2 instances are the building blocks of your cloud infrastructure. **By checkin
 </div>
 <br>
 
- <p><li>In the navigation bar, on the upper right corner, choose the name of the currently displayed <strong>Region</strong>. Then, choose the <strong>Region</strong> where your EC2 instances are located.</li></p>
+<li>In the <strong><em>top-right corner of the navigation bar</em></strong>, click on the name of the <strong>Region</strong> that is currently shown. Then, pick the <strong>Region</strong> where your EC2 instances are based.</li>
 
- <p><li>In the navigation pane on left, expand <strong>Instances</strong> and select <strong>Instances</strong> or you can directly choose <strong>Instances</strong> under <strong>Resources</strong> section.</li></p>
- 
- <p><li>Make sure you click on <strong>Instances</strong> tab rather than <strong>Instances(running)</strong> tab as it will only show <strong><em>running instances</em></strong> at that very moment.
+ <p><li>Select <strong>Instances</strong> under <strong>Resources</strong> section. Make sure you click on <strong>Instances</strong> tab rather than <strong>Instances(running)</strong> tab as it will only show <strong><em>running instances</em></strong> at that very moment.</li></p>
    
- <p><li>Select the instance from the **Instances** window and choose the <strong> Tags</strong> tab.</li></p>
- <p><li>See below pictures as an **example for both Tagged and Non-Tagged Instances**:</li></p>
-<br>
+ <p><li>From the list of instances, find the <strong>specific EC2 instance</strong> you wish to tag and then click on it.</li></p>
+
+ <p><li>In the <strong>Details</strong> section at the bottom, there's a tab labeled <strong>Tags</strong> at the last. Click on it.</li></p>
+ 
+ <p><li>Take a look at the pictures below as examples, <strong>one showing EC2 Instances with Tags</strong> and the <strong>other showing EC2 Instances without Tags</strong>.</li></p>
+</ol>
 
 | EC2 Instances with Tags |
 :-------------------------:|
@@ -43,21 +44,26 @@ EC2 instances are the building blocks of your cloud infrastructure. **By checkin
 :-------------------------:|
 ![](https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/No+Tags.png)
 
+<br>
+<br>
 <h2 align= "left">To add tags to an individual EC2 instance</h2>
 
 Follow the above mentioned steps above to check if your EC2 instances are having "tags" or not. Now to add "tags", follow these steps:
+<ol>
+  <p><li>Once you click on the <strong>Tags</strong> tab, you'll find a button called <strong>Manage Tags</strong> on the right side. You can see it in the pictures above.</li></p>
+  <p><li>Click on <strong>Manage tags</strong> and a new window will open just like the one shown below:</li></p>
 
-1. Choose **Manage tags** button as you see can see in above image, a new window will open.
-2. Choose **Add new tag**.
 <div align="center">
-  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/New+Tag.png" alt="Logo" width="800" height="400">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/New+Tag.png" alt="Logo" width="900" height="400">
 </div>
- 
-3. Enter the **key and value** for the tag.
-4. Choose **Add new tag**, if you want to add any additional tag).
-5. Look at this example:
+
+  <p><li>Click on <strong>Add new tag</strong>.</li></p>
+  <p><li>Enter the <strong>key and value</strong> for the tag.</li></p>
+  <p><li>Choose <strong>Add new tag</strong>, if you want to add any additional tag.</li></p>
+  <p><li>Take a look at this example:</li></p>
+  
 <div align="center">
-  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/Added+New+Tag.png" alt="Logo" width="800" height="400">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/Added+New+Tag.png" alt="Logo" width="900" height="400">
 </div>
 
 6. For this project, you must make sure that one of the **Tag: Value** pairs should be **Project: UAT** as it will be easy to understand.

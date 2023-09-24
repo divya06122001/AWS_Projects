@@ -84,17 +84,21 @@ This policy grants the permissions including <strong><em>describing EC2 instance
 
   <li>Once added, it will resemble the image below for your reference.</li>
 <br>  
+
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/Specify+Permissions.png" alt="IAM Policy - Specify Permissions" width="800" height="400">
 </div>
-  <li>Resolve any <strong>security warnings, errors, or general warnings</strong> generated during policy validation <em>(unlikely but just in case)</em>.</li>
+
+  <p><li>Resolve any <strong>security warnings, errors, or general warnings</strong> generated during policy validation <em>(unlikely but just in case)</em>.</li></p>
   <p><li>Once you've finished adding permissions to the policy, choose <strong>Next</strong>.</li></p>
   <li>A window will open named as <strong>Review and create</strong>.</li>
+
 <br>  
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/Review+and+Create.png" alt="IAM Policy - Review and create" width="950" height="400">
 </div>
-<br>  
+<br>
+
   <li>On the <strong>Review and create</strong> page, provide a <strong>Policy Name</strong> <em>(e.g., “EC2_StartandStop_Policy” or “IAMPolicy_STARTINGandSTOPPING_EC2”)</em> and a <strong>Description (optional)</strong> for the policy that you are creating.</li>
   <p><li> Review <strong>Permissions defined in this policy</strong> to see the permissions that are granted by policy.</li></p>
   <p><li><strong>Please ensure</strong> that all the specified services, – <strong><em>EC2, CloudWatch Logs, Lambda and EventBridge</em></strong>- are appropriately listed. Verify that they match the image below.</li></p>

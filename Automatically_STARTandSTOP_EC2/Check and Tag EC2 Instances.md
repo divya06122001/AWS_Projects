@@ -50,7 +50,7 @@ EC2 instances are the building blocks of your cloud infrastructure. **By checkin
 
 Follow the above mentioned steps above to check if your EC2 instances are having "tags" or not. Now to add "tags", follow these steps:
 <ol>
-  <p><li>Once you click on the <strong>Tags</strong> tab, you'll find a button called <strong>Manage Tags</strong> on the right side. You can see it in the pictures above.</li></p>
+  <p><li>Once you click on the <strong>Tags</strong> tab, you'll find a button called <strong>Manage Tags</strong> on the right side. You can see it in the pictures included in the previous section headlined as Examples for both Tagged and Non Tagged EC2 Instances.</li></p>
   <p><li>Click on <strong>Manage tags</strong> and a new window will open just like the one shown below:</li></p>
 
 <div align="center">
@@ -66,26 +66,34 @@ Follow the above mentioned steps above to check if your EC2 instances are having
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/Added+New+Tag.png" alt="Logo" width="900" height="400">
 </div>
 
-6. For this project, you must make sure that one of the **Tag: Value** pairs should be **Project: UAT** as it will be easy to understand.
-7. You can also use your **own defined tags** but then you have to change the **DEFAULT_TAGS** value when modifying Lambda function (You'll come to understand it once you create a Lambda function). 
-8. When you are finished adding tags, click on **Save** button.
-9. Now, check again to see the updated tags and it will look something like this:
+  <p><li>For this project, you must make sure that one of the <strong>Tag: Value</strong> pairs should be <strong>Project: UAT</strong> as it will be easy to understand.</li></p>
+  <p><li>You can also use your <strong>own defined tags</strong> but then you have to change the <strong>DEFAULT_TAGS</strong> value when modifying Lambda function (You'll come to understand it once you create a Lambda function which will be detailed in the subsequent document).</li></p>
+  <p><li>When you are finished adding tags, click on <strong>Save</strong> button.</li></p>
+  <p><li>Now, check again to see the updated tags and it will look something like this:</li></p>
+
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/Updated+Tags.png" alt="Logo" width="800" height="400">
 </div>   
 
-10. I've repeated the outlined procedure and accomplished the addition of a tag to another EC2 instance. Keeping things organized and efficient is the key!
+  <p><li>I've repeated the outlined procedure and accomplished the addition of a tag to another EC2 instance. <strong><em>Keeping things organized and efficient is the key!</em></strong></li></p>
+
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/Updated+Tags+of+second+EC2+instance.png" alt="Logo" width="800" height="400">
 </div>
+</ol>
 
+<br>
 <h2>Conclusion</h2>
 
 <p>By effectively <strong>checking and tagging your EC2 instances</strong>, you're enhancing visibility, cost management, and overall organization within your cloud environment. <strong><em>Remember, a well-organized cloud is a happy cloud! ☁️✨</em></strong></p>
+
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/Happy+Cloud.jpg" alt="Logo" width="450" height="300">
 </div>
-<br />
-<p>To learn more, check out the <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html">AWS documentation on EC2 tagging</a>.</p>
-<br />
+
+<br>
 <p align= "center"><strong><em>✨ With your EC2 instances neatly adorned with tags and everything perfectly in place, you're now well-prepared to gracefully <a href="#next-step">move on to the next step</a> ✨. Wishing you a productive and rewarding journey through your documentation tasks! 📝</em></strong></p>
+
+<br>
+<br>
+<p>If you want to learn more about EC2 Tagging, check out the <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html">AWS documentation on EC2 tagging</a>.</p>

@@ -25,7 +25,7 @@ EC2 instances are the building blocks of your cloud infrastructure. **By checkin
 </div>
 <br>
 
-<li>In the <strong><em>top-right corner of the navigation bar</em></strong>, click on the name of the <strong>Region</strong> that is currently shown. Then, pick the <strong>Region</strong> where your EC2 instances are based.</li>
+<li>In the <strong><em>top-right corner of the navigation bar</em></strong>, click on the name of the <strong>Region</strong> currently shown i.e., <strong>Mumbai</strong>. Then, pick the <strong>Region</strong> where your EC2 instances are based.</li>
 
  <p><li>Select <strong>Instances</strong> under <strong>Resources</strong> section. Make sure you click on <strong>Instances</strong> tab rather than <strong>Instances(running)</strong> tab as it will only show <strong><em>running instances</em></strong> at that very moment.</li></p>
    

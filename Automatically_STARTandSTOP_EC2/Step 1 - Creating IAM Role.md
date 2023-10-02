@@ -85,7 +85,7 @@ This policy grants the permissions including <strong><em>describing EC2 instance
   <p><li>Once added, it will resemble the image below for your reference.</li></p>
 
 <div align="center">
-  <img src="" alt="IAM Policy - Specify Permissions" width="800" height="400">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/IAM+Role/Specify+Permissions+Example.png" alt="IAM Policy - Specify Permissions" width="800" height="400">
 </div>
 
   <p><li>Resolve any <strong>security warnings, errors, or general warnings</strong> generated during policy validation <em>(unlikely but just in case)</em>.</li></p>

@@ -66,12 +66,11 @@
                 </tr>
                </table>
               </div>
-          </li>
         <p><li><strong>Please note</strong> that the <strong><em>question mark (?)</em></strong> represents <strong><em>no specific value</em></strong>, the <strong><em>asterisk (*)</em></strong> represents <strong><em>any value</em></strong> and the <strong><em>hyphen (-)</em></strong> represents <strong><em>a range</em></strong>.</li></p>
       </ul>
-</li>
-<br>
-    
+</li></p>
+
+<br>    
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Schedule+Pattern.png" alt="AWS EventBridge Schedule Pattern" width="950" height="350">
 </div>
@@ -129,43 +128,18 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
 <p><li>You can view a list of your new and existing schedules on the <strong>Schedules</strong> page. Under the <strong>Status</strong> column, verify that the new schedule is <strong>Enabled</strong>.</li></p>
 <p><li>To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status of the EC2 instance around the set trigger time i.e., 8:30 AM in the morning.</li></p> 
 <p><li>You can also check <strong>CloudWatch logs</strong> for a more detailed version.</li></p>
-<p><li>We have created START Schedule for our EC2 instances but we also need to create STOP schedule.</li></p>
-<p><li>To create the STOP schedule, follow the above mentioned steps and modify some steps as mentioned below:
+<p><li>We have created <strong>Start Schedule</strong> for our EC2 instances but we need to create a <strong>Stop schedule</strong> too.</li></p>
+<p><li>To create the new <strong>Stop schedule</strong>, follow the above mentioned steps and modify some steps as mentioned below:
   <ul>
-    <p><li> In the mentioned Step 6, edit the <strong>Schedule name and description</strong>section, do the following:
+    <p><li>In Step 6, when editing the <strong>Schedule name and description</strong> section, follow these instructions:
       <ul>
-        <p><li>For <strong>Schedule name</strong>, enter the name for your schedule: <strong>EC2StopEventSchedule</strong>.
-        <p><li>For <strong>Description - optional</strong>, enter the description for your schedule: A scheduled stop event to trigger our Lambda function for stopping the running EC2 instance.
+        <p><li>For <strong>Schedule name</strong>, enter the name for your schedule: <strong>EC2StopEventSchedule</strong>.</li></p>
+        <p><li>For <strong>Description - optional</strong>, enter the description for your schedule: A scheduled stop event to trigger our Lambda function for stopping the running EC2 instance.</li></p>
         <p><li>For <strong>Schedule group</strong>, choose the one we created: <strong>EC2_Schedule_Group</strong>.</li></p>
       </ul>
     </li></p>
-    
-    <p>In Step 7, when editing the <strong>Schedule pattern</strong> section, follow these instructions for the <strong>Cron expression</strong>:</p>
-      <div align="left">
-        <table style="border-collapse: collapse; border: 2px solid #444;">
-          <tr>
-            <th>Minutes</th>
-            <th style="border: 1px solid #444; padding: 6px 12px;">Hours</th>
-            <th>Day of Month</th>
-            <th>Month</th>
-            <th style="border: 1px solid #444; padding: 6px 12px;">Day of the Week</th>
-            <th>Year</th>
-          </tr>
-          <tr align="center">
-            <td>00</td>
-            <td style="border: 1px solid #444;">8</td>
-            <td>?</td>
-            <td>*</td>
-            <td style="border: 1px solid #444;">2-6</td>
-            <td>*</td>
-          </tr>
-        </table>
-      </div>
-
-    <p><li>In the mentioned Step 7, edit the <strong>Schedule pattern</strong> section, do the following:
-      <ul>
-         <p><li>For <strong>Cron expression</strong>, fill as below:</li></p>
-            <div align="left">
+    <p><li>In Step 7, when editing the <strong>Schedule pattern</strong> section, follow these instructions for the <strong>Cron expression</strong>:</li></p>
+          <div align="left">
               <table style="border-collapse: collapse; border: 2px solid #444;">
                 <tr>
                   <th>Minutes</th>
@@ -177,17 +151,15 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
                 </tr>
                 <tr align="center">
                   <td>00</td>
-                  <td style="border: 1px solid #444;">8</td>
+                  <td style="border: 1px solid #444;">9</td>
                   <td>?</td>
                   <td>*</td>
                   <td style="border: 1px solid #444;">2-6</td>
                   <td>*</td>
                 </tr>
-              </table>
-            </div>
-      </ul>
-    </li></p>
-    
+               </table>
+              </div>
+
   </ul>
 </li></p>
 <p><li>Absolutely, feel free to <strong><em>disable a rule rather than going through the process of deleting and recreating it</em></strong>. The good news is that <strong><em>EventBridge doesn't charge for disabled schedules</em></strong>, giving you added flexibility in managing your event triggers.</li></p>

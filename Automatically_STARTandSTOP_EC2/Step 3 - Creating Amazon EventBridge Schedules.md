@@ -26,7 +26,7 @@
   <p><li>On the <strong>Specify schedule detail</strong> page, in the <strong>Schedule name and description section</strong> do the following:
     <ul> 
       <p><li>For <strong>Schedule name</strong>, enter a name for your schedule. For example: <strong>EC2StartEventSchedule</strong>.</li></p>
-      <p><li>For <strong>Description - <em>optional</em></strong>, enter a description for your schedule.<br>For example, <strong>A scheduled start event to trigger a Lambda function for initiating the EC2 instance launch</strong>.</li></p>
+      <p><li>For <strong>Description - <em>optional</em></strong>, enter a description for your schedule.<br>For example, <strong>A scheduled start event to trigger the Lambda function for initiating the EC2 instance launch</strong>.</li></p>
       <p><li>For <strong>Schedule group</strong>, choose a schedule group from the drop-down options. Certainly, you can choose the <strong>default</strong> option. <br> However, I recommend having a dedicated schedule group. <strong>Why?</strong> Because, <strong><em>Schedule groups allows you to categorize and organize multiple schedules for better management and control for each specific schedule.</em></strong></li></p>
       <p><li>To <strong>create a new schedule group</strong>, click on the anchor text <strong>create your own schedule group</strong> written under the schedule group heading.</li></p>
       <p><li>A new window will open shown as below:</li></p>
@@ -67,28 +67,27 @@
                </table>
               </div>
           </li>
-        <li><strong>Please note</strong> that the <strong><em>question mark (?)</em></strong> represents <strong><em>no specific value</em></strong>, the <strong><em>asterisk (*)</em></strong> represents <strong><em>any value</em></strong> and the <strong><em>hyphen (-)</em></strong> represents <strong><em>a range</em></strong>.</li>
+        <p><li><strong>Please note</strong> that the <strong><em>question mark (?)</em></strong> represents <strong><em>no specific value</em></strong>, the <strong><em>asterisk (*)</em></strong> represents <strong><em>any value</em></strong> and the <strong><em>hyphen (-)</em></strong> represents <strong><em>a range</em></strong>.</li></p>
       </ul>
-</li><br>  
-
+</li>
 <br>
+    
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Schedule+Pattern.png" alt="AWS EventBridge Schedule Pattern" width="950" height="350">
 </div>
-<br>
 
-<li>To verify the accuracy of the cron expressions, check the <strong>next 10 trigger dates</strong> as illustrated in the image above.</li><br>
-<li>For <strong>Flexible time window</strong>, choose <strong>Off</strong> to turn off the option.</li><br>
-<li>In the <strong>Timeframe</strong> section, specify your <strong>Timezone</strong>.</li><br>
-<li> It is <em>totally optional</em> to set both the <strong>start date and time</strong> and an <strong>end date and time</strong> for the schedule.
+<p><li>To verify the accuracy of the cron expressions, check the <strong>next 10 trigger dates</strong> as illustrated in the image above.</li></p>
+<p><li>For <strong>Flexible time window</strong>, choose <strong>Off</strong> to turn off the option.</li></p>
+<p><li>In the <strong>Timeframe</strong> section, specify your <strong>Timezone</strong>.</li></p>
+<p><li>It is <em>totally optional</em> to set both the <strong>start date and time</strong> and an <strong>end date and time</strong> for the schedule.</li></p>
   <ul>
     <p><li><strong>A recurring schedule without a start date will begin as soon as it is created and available.</strong></li></p>
-    <li><strong>A recurring schedule without an end date will continue to invoke its target indefinitely.</strong></li>
+    <p><li><strong>A recurring schedule without an end date will continue to invoke its target indefinitely.</strong></li></p>
   </ul>
-</li><br>
-<li>Choose <strong>Next</strong>.</li><br>
-<li>On the <strong>Select target - <em>optional</em></strong> page, do the following:
-  <ul>
+
+<p><li>Choose <strong>Next</strong>.</li></p>
+<p><li>On the <strong>Select target - <em>optional</em></strong> page, do the following:</li></p>
+    <ul>
       <p><li>Under <strong>Target API</strong>, select <strong>Templated targets</strong> and choose <strong>AWS Lambda Invoke</strong>.</li></p>
       <p><li>In the <strong>Invoke</strong> section, choose the <strong>Lambda function</strong> that we have created previously from the dropdown list.</li></p>
       <p><li>For the <strong>Payload</strong>, provide the below mentioned JSON payload. <strong>Payload</strong> is the data sent to <strong>EventBridge Scheduler's target</strong> i.e., <strong>our Lambda function</strong>, <em>during a scheduled event trigger</em>.</li></p>
@@ -98,39 +97,103 @@
       }    
 
 This JSON message includes <em>a single key-value pair with an <strong>"action"</strong> field set to <strong>"start"</strong>, indicating the desired process to initiate</em>. This tells the <strong>EventBridge Scheduler to tell the Lambda function to start EC2 instances</strong>. It's a way for them to communicate what action needs to be done.
-  </ul>
-</li>
-
-<li>Choose <strong>Next</strong>, then on the <strong>Settings - <em>optional</em></strong> page, do the following:
+    </ul>
+  
+<p><li>Choose <strong>Next</strong>, then on the <strong>Settings - <em>optional</em></strong> page, do the following:
   <ul>
     <p><li>In the <strong>Schedule state</strong> section, for <strong>Enable schedule</strong>, you can toggle feature on or off using the switch. The <strong><em>EventBridge Scheduler activates your schedule by default</em></strong>, which is the required behaviour.</li></p>
-    <p><li>In the <strong>Action after schedule completion</strong> section, choose <strong>NONE</strong> from the dropdown.</p>
+    <p><li>In the <strong>Action after schedule completion</strong> section, choose <strong>NONE</strong> from the dropdown.
           <ul>
-           <p><li>If you choose <strong>NONE</strong>, the <strong>EventBridge Scheduler will not take any action</strong> after the schedule completes.</li></p>
-           <p><li>If you choose <strong>DELETE</strong>, the <strong>scheduler will automatically delete the schedule</strong> after it has completed its last invocation and has no future target invocations planned.</li></p>
+            <p><li>If you choose <strong>NONE</strong>, the <strong>EventBridge Scheduler will not take any action</strong> after the schedule completes.</li></p>
+            <p><li>If you choose <strong>DELETE</strong>, the <strong>scheduler will automatically delete the schedule</strong> after it has completed its last invocation and has no future target invocations planned.</li></p>
           </ul>
-    </li>
-    <li>In the <strong>Retry policy and dead-letter queue (DLQ)</strong> section, keep all settings as default, but make sure to verify that the values are set to their maximum limits. 
-      <ul>
-        <p><li>For <strong>Maximum age of event - <em>optional</em></strong>: <strong>24 hours and 0 minutes</strong> so that <em>EventBridge Scheduler must keep an unprocessed event for 24 hours</em>.</li></p>
-        <p><li>For <strong>Retry attempts - <em>optional</em></strong>: <strong>185 times</strong> so that <em>EventBridge Scheduler retries the schedule if the target returns an error for 185 times</em>.</li></p>
-        <p><li>For <strong>Dead-letter queue (DLQ)</strong>: <strong>None</strong> as we don't want to configure a DLQ now. A Dead-Letter Queue (DLQ) is used to <em>handle messages that fail to process, ensuring proper handling and analysis of problematic messages</em>.</li></p>
-        <p><li>For <strong>Encryption</strong>: Leave it unbothered.</li></p>
-        <p><li>Scroll down to <strong>Permissions</strong> section and choose <strong>Use existing role</strong>, since we have already created an IAM role with the necessary permissions.</li></p>
-        <p><li>From the drop-down, select the <em><strong>IAM role</strong></em> that we've made previously.</li></p>
-      </ul>
-    </li>
+    </li></p>
   </ul>
-</li>
-<li>Choose <strong>Next</strong>.</li><br>
-<li>In the <strong>Review and create schedule</strong> page, review the details of your schedule. In each section, you can choose <strong>Edit</strong> to go back to that step and edit its details.</li><br>
-<li>Choose <strong>Create schedule</strong> to finish creating your new schedule.</li><br>
-<li>You can view a list of your new and existing schedules on the <strong>Schedules</strong> page. Under the <strong>Status</strong> column, verify that the new schedule is <strong>Enabled</strong>.</li><br>
-<li>To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status of the EC2 instance around the set trigger time i.e., 8:30 AM in the morning.</li><br> 
-<li>You can also check <strong>CloudWatch logs</strong> for a more detailed version.</li><br>
-<li>Absolutely, feel free to <strong><em>disable a rule rather than going through the process of deleting and recreating it</em></strong>. The good news is that <strong><em>EventBridge doesn't charge for disabled schedules</em></strong>, giving you added flexibility in managing your event triggers.</li>
+</li></p>
+    
+<p><li>In the <strong>Retry policy and dead-letter queue (DLQ)</strong> section, keep all settings as default, but make sure to verify that the values are set to their maximum limits. 
+  <ul>
+    <p><li>For <strong>Maximum age of event - <em>optional</em></strong>: <strong>24 hours and 0 minutes</strong> so that <em>EventBridge Scheduler must keep an unprocessed event for 24 hours</em>.</li></p>
+    <p><li>For <strong>Retry attempts - <em>optional</em></strong>: <strong>185 times</strong> so that <em>EventBridge Scheduler retries the schedule if the target returns an error for 185 times</em>.</li></p>
+    <p><li>For <strong>Dead-letter queue (DLQ)</strong>: <strong>None</strong> as we don't want to configure a DLQ now. A Dead-Letter Queue (DLQ) is used to <em>handle messages that fail to process, ensuring proper handling and analysis of problematic messages</em>.</li></p>
+  </ul>
+</li></p>
+
+<p><li>Leave the settings for <strong>Encryption</strong> as default.</li></p>
+<p><li>Scroll down to <strong>Permissions</strong> section and choose <strong>Use existing role</strong>, since we have already created an IAM role with the necessary permissions.</li></p>
+<p><li>From the drop-down, select the <em><strong>IAM role</strong></em> that you've made previously by following the steps mentioned in the document: <a href= "https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%201%20-%20Creating%20IAM%20Role.md">Step 1</a>.</li></p>
+<p><li>Choose <strong>Next</strong>.</li></p>
+
+<p><li>In the <strong>Review and create schedule</strong> page, review the details of your schedule. In each section, you can choose <strong>Edit</strong> to go back to that step and edit its details.</li></p>
+<p><li>Choose <strong>Create schedule</strong> to finish creating your new schedule.</li></p>
+<p><li>You can view a list of your new and existing schedules on the <strong>Schedules</strong> page. Under the <strong>Status</strong> column, verify that the new schedule is <strong>Enabled</strong>.</li></p>
+<p><li>To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status of the EC2 instance around the set trigger time i.e., 8:30 AM in the morning.</li></p> 
+<p><li>You can also check <strong>CloudWatch logs</strong> for a more detailed version.</li></p>
+<p><li>We have created START Schedule for our EC2 instances but we also need to create STOP schedule.</li></p>
+<p><li>To create the STOP schedule, follow the above mentioned steps and modify some steps as mentioned below:
+  <ul>
+    <p><li> In the mentioned Step 6, edit the <strong>Schedule name and description</strong>section, do the following:
+      <ul>
+        <p><li>For <strong>Schedule name</strong>, enter the name for your schedule: <strong>EC2StopEventSchedule</strong>.
+        <p><li>For <strong>Description - optional</strong>, enter the description for your schedule: A scheduled stop event to trigger our Lambda function for stopping the running EC2 instance.
+        <p><li>For <strong>Schedule group</strong>, choose the one we created: <strong>EC2_Schedule_Group</strong>.</li></p>
+      </ul>
+    </li></p>
+    
+    <p>In Step 7, when editing the <strong>Schedule pattern</strong> section, follow these instructions for the <strong>Cron expression</strong>:</p>
+      <div align="left">
+        <table style="border-collapse: collapse; border: 2px solid #444;">
+          <tr>
+            <th>Minutes</th>
+            <th style="border: 1px solid #444; padding: 6px 12px;">Hours</th>
+            <th>Day of Month</th>
+            <th>Month</th>
+            <th style="border: 1px solid #444; padding: 6px 12px;">Day of the Week</th>
+            <th>Year</th>
+          </tr>
+          <tr align="center">
+            <td>00</td>
+            <td style="border: 1px solid #444;">8</td>
+            <td>?</td>
+            <td>*</td>
+            <td style="border: 1px solid #444;">2-6</td>
+            <td>*</td>
+          </tr>
+        </table>
+      </div>
+
+    <p><li>In the mentioned Step 7, edit the <strong>Schedule pattern</strong> section, do the following:
+      <ul>
+         <p><li>For <strong>Cron expression</strong>, fill as below:</li></p>
+            <div align="left">
+              <table style="border-collapse: collapse; border: 2px solid #444;">
+                <tr>
+                  <th>Minutes</th>
+                  <th style="border: 1px solid #444; padding: 6px 12px;">Hours</th>
+                  <th>Day of Month</th>
+                  <th>Month</th>
+                  <th style="border: 1px solid #444; padding: 6px 12px;">Day of the Week</th>
+                  <th>Year</th>
+                </tr>
+                <tr align="center">
+                  <td>00</td>
+                  <td style="border: 1px solid #444;">8</td>
+                  <td>?</td>
+                  <td>*</td>
+                  <td style="border: 1px solid #444;">2-6</td>
+                  <td>*</td>
+                </tr>
+              </table>
+            </div>
+      </ul>
+    </li></p>
+    
+  </ul>
+</li></p>
+<p><li>Absolutely, feel free to <strong><em>disable a rule rather than going through the process of deleting and recreating it</em></strong>. The good news is that <strong><em>EventBridge doesn't charge for disabled schedules</em></strong>, giving you added flexibility in managing your event triggers.</li></p>
+
 </ol>
-<br />
+<br>
 
 <p align= "center"><strong><em>:partying_face:🎉 Congratulations, you've just woven a web of time with your EventBridge schedules! ⏰✨ Now, your events are all set to dance to their own beats. Remember, you're the DJ of this scheduling party! 🎶💃 Keep rocking those automations and let the events unfold in style! 🌟:metal:🌟 </em></strong></p>
 

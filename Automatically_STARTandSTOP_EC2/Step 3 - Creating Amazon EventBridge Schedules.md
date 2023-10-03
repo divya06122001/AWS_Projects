@@ -1,6 +1,6 @@
 <h1 align= "center">Crafting a schedule using the EventBridge Scheduler console</h1>
 <div align="center">
-  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/AWS+EventBridge+Title.png" alt="AWS EventBridge" width="800" height="500">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/AWS+EventBridge+Title.png" alt="Title Image" width="800" height="500">
 </div>
 
 <h2 align= "left">Creating a new EventBridge schedule</h2>
@@ -20,7 +20,7 @@
   <p><li>You will encounter a window that resembles the one shown below.</li></p>
 
 <div align="center">
-  <img src="" alt="AWS EventBridge Schedule" width="950" height="350">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Specify+schedule+detail+.png" alt="AWS EventBridge Schedule" width="950" height="350">
 </div>
 
   <p><li>On the <strong>Specify schedule detail</strong> page, in the <strong>Schedule name and description section</strong> do the following:
@@ -88,16 +88,19 @@
   </ul>
 </li></p>
 
-<p><li>Lo</li></p>
-
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Timeframe.png" alt="AWS EventBridge Timeframe" width="950" height="350">
 </div>
 
 <p><li>Choose <strong>Next</strong>.</li></p>
-<p><li>On the <strong>Select target - <em>optional</em></strong> page, do the following:</li></p>
+<p><li>On the <strong>Select target - <em>optional</em></strong> page, do the following:
     <ul>
       <p><li>Under <strong>Target API</strong>, select <strong>Templated targets</strong> and choose <strong>AWS Lambda Invoke</strong>.</li></p>
+      <p><li>Take a look at the image below to get a clearer understanding of the above mentioned step.</li></p>
+      
+<div align="center">
+<img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/EventBridge+Target.png" alt="AWS EventBridge Target" width="950" height="350">
+</div>
       <p><li>In the <strong>Invoke</strong> section, choose the <strong>Lambda function</strong> that we have created previously from the dropdown list.</li></p>
       <p><li>For the <strong>Payload</strong>, provide the below mentioned JSON payload. <strong>Payload</strong> is the data sent to <strong>EventBridge Scheduler's target</strong> i.e., <strong>our Lambda function</strong>, <em>during a scheduled event trigger</em>.</li></p>
     
@@ -107,10 +110,12 @@
 
 This JSON message includes <em>a single key-value pair with an <strong>"action"</strong> field set to <strong>"start"</strong>, indicating the desired process to initiate</em>. This tells the <strong>EventBridge Scheduler to tell the Lambda function to start EC2 instances</strong>. It's a way for them to communicate what action needs to be done.
     </ul>
+  </li></p>
+  
 <p><li>Here, is an image depicting aforementioned steps:</li></p> 
  
 <div align="center">
-  <img src="" alt="AWS EventBridge Target" width="950" height="350">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Invoke+-+Payload.png" alt="AWS EventBridge Invoke and Payload" width="950" height="350">
 </div>
 
 <p><li>Choose <strong>Next</strong>, then on the <strong>Settings - <em>optional</em></strong> page, do the following:
@@ -118,13 +123,17 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
     <p><li>In the <strong>Schedule state</strong> section, for <strong>Enable schedule</strong>, you can toggle feature on or off using the switch. The <strong><em>EventBridge Scheduler activates your schedule by default</em></strong>, which is the required behaviour.</li></p>
     <p><li>In the <strong>Action after schedule completion</strong> section, choose <strong>NONE</strong> from the dropdown.
           <ul>
-            <p><li>If you choose <strong>NONE</strong>, the <strong>EventBridge Scheduler will not take any action</strong> after the schedule completes.</li></p>
+            <p><li>If you choose <strong>NONE</strong>, the <strong>EventBridge Scheduler will not take any action</strong> after the schedule completes,  which is the required option.</li></p>
             <p><li>If you choose <strong>DELETE</strong>, the <strong>scheduler will automatically delete the schedule</strong> after it has completed its last invocation and has no future target invocations planned.</li></p>
           </ul>
     </li></p>
   </ul>
 </li></p>
-    
+
+<div align="center">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Settings+-+Optional.png" alt="AWS EventBridge Settings-Optional 1" width="950" height="350">
+</div>    
+
 <p><li>In the <strong>Retry policy and dead-letter queue (DLQ)</strong> section, keep all settings as default, but make sure to verify that the values are set to their maximum limits. 
   <ul>
     <p><li>For <strong>Maximum age of event - <em>optional</em></strong>: <strong>24 hours and 0 minutes</strong> so that <em>EventBridge Scheduler must keep an unprocessed event for 24 hours</em>.</li></p>
@@ -133,17 +142,30 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
   </ul>
 </li></p>
 
+<div align="center">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Settings+-+Optional+(Part+2).png" alt="AWS EventBridge Settings-Optional 2" width="950" height="350">
+</div>
+
 <p><li>Leave the settings for <strong>Encryption</strong> as default.</li></p>
 <p><li>Scroll down to <strong>Permissions</strong> section and choose <strong>Use existing role</strong>, since we have already created an IAM role with the necessary permissions.</li></p>
 <p><li>From the drop-down, select the <em><strong>IAM role</strong></em> that you've made previously by following the steps mentioned in the document: <a href= "https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%201%20-%20Creating%20IAM%20Role.md">Step 1</a>.</li></p>
+
+<div align="center">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Settings+-+Optional+(Part+3).png" alt="AWS EventBridge Settings-Optional 3" width="950" height="350">
+</div>
+
 <p><li>Choose <strong>Next</strong>.</li></p>
 
 <p><li>In the <strong>Review and create schedule</strong> page, review the details of your schedule. In each section, you can choose <strong>Edit</strong> to go back to that step and edit its details.</li></p>
 <p><li>Choose <strong>Create schedule</strong> to finish creating your new schedule.</li></p>
 <p><li>You can view a list of your new and existing schedules on the <strong>Schedules</strong> page. Under the <strong>Status</strong> column, verify that the new schedule is <strong>Enabled</strong>.</li></p>
-<p><li>To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status of the EC2 instance around the set trigger time i.e., 8:30 AM in the morning.</li></p> 
-<p><li>You can also check <strong>CloudWatch logs</strong> for a more detailed version.</li></p>
-<p><li>We have created <strong>Start Schedule</strong> for our EC2 instances but we need to create a <strong>Stop schedule</strong> too.</li></p>
+
+<div align="center">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/START+Schedule+Detail.png" alt="AWS EventBridge START Event details" width="950" height="400">
+</div>
+
+<p><li>To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status of the EC2 instance around the set trigger time i.e., <strong><em>8:30 AM in the morning</em></strong>.</li></p> 
+<p><li>We have created a <strong>Start Schedule</strong> for our EC2 instances but we need to create a <strong>Stop schedule</strong> too.</li></p>
 <p><li>To create the new <strong>Stop schedule</strong>, follow the above mentioned steps and modify some steps as mentioned below:
   <ul>
     <p><li>In step 6, when editing the <strong>Schedule name and description</strong> section, follow these instructions:
@@ -151,43 +173,58 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
         <p><li>For <strong>Schedule name</strong>, enter the name for your schedule: <strong>EC2StopEventSchedule</strong>.</li></p>
         <p><li>For <strong>Description - optional</strong>, enter the description for your schedule: <strong>A scheduled stop event to trigger our Lambda function for stopping the running EC2 instance</strong>.</li></p>
         <p><li>For <strong>Schedule group</strong>, choose the one we created: <strong>EC2_Schedule_Group</strong>.</li></p>
-      </ul>
+       
+  <div align="center">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/STOP+Event.png" alt="AWS EventBridge STOP Event" width="950" height="350">
+</div>
+     </ul>
     </li></p>
-    <p><li>In step 7, when editing the <strong>Schedule pattern</strong> section, follow these instructions for the <strong>Cron expression</strong>:</li></p>
-          <div align="left">
-              <table style="border-collapse: collapse; border: 2px solid #444;">
-                <tr>
-                  <th>Minutes</th>
-                  <th style="border: 1px solid #444; padding: 6px 12px;">Hours</th>
-                  <th>Day of Month</th>
-                  <th>Month</th>
-                  <th style="border: 1px solid #444; padding: 6px 12px;">Day of the Week</th>
-                  <th>Year</th>
-                </tr>
-                <tr align="center">
-                  <td>00</td>
-                  <td style="border: 1px solid #444;">9</td>
-                  <td>?</td>
-                  <td>*</td>
-                  <td style="border: 1px solid #444;">2-6</td>
-                  <td>*</td>
-                </tr>
-               </table>
-              </div>
-    <p><li>In step 13, For the <strong>Payload</strong>, provide the below mentioned JSON payload. </li></p>
+    
+<p><li>In step 7, when editing the <strong>Schedule pattern</strong> section, follow these instructions for the <strong>Cron expression</strong>:</li></p>
+  <div align="left">
+      <table style="border-collapse: collapse; border: 2px solid #444;">
+        <tr>
+          <th>Minutes</th>
+          <th style="border: 1px solid #444; padding: 6px 12px;">Hours</th>
+          <th>Day of Month</th>
+          <th>Month</th>
+          <th style="border: 1px solid #444; padding: 6px 12px;">Day of the Week</th>
+          <th>Year</th>
+        </tr>
+        <tr align="center">
+          <td>00</td>
+          <td style="border: 1px solid #444;">9</td>
+          <td>?</td>
+          <td>*</td>
+          <td style="border: 1px solid #444;">2-6</td>
+          <td>*</td>
+        </tr>
+      </table>
+  </div>  
+
+<p><li>In step 13, For the <strong>Payload</strong>, provide the below mentioned JSON payload.</li></p>
          
           {
             "action": "stop"
           }
     
-</ul>
+   </ul>
 </li></p>
+<p><li>Under the <strong>Status</strong> column, verify that the new schedule is <strong>Enabled</strong>.</li></p>
 
-<p><li>To verify that your schedule invokes the Amazon Lambda target and stops the running EC2 instance, check the status of the EC2 instance around the set trigger time i.e., 9:00 PM in the night.</li></p>
+<div align="center">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/STOP+Schedule+Detail.png" alt="AWS EventBridge STOP Event details" width="950" height="400">
+</div>
 
-<p><li>Now that we've set up schedules for both the <strong>Start Event</strong> and the <strong>Stop Event</strong> for our Lambda function, the next step is to wait for the magic to happen. However, before that, please <strong><em>verify the status of both events</em></strong> to ensure they are enabled and functioning correctly.</li></p>
+<p><li>To verify that your schedule invokes the Amazon Lambda target and stops the running EC2 instance, check the status of the EC2 instance around the set trigger time i.e., <strong>9:00 PM in the night</strong>.</li></p>
+
+<p><li>Now that we've set up schedules for both the <strong>Start Event</strong> and the <strong>Stop Event</strong> for our Lambda function, the next step is to wait for the magic to happen. However, before that, <strong><em>take a look at the status of both events to ensure they are enabled and functioning correctly</em></strong>.</li></p>
+
+<div align="center">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Schedule+Details.png" alt="AWS EventBridge Schedule details" width="950" height="350">
+</div>
   
-<p><li>Absolutely, feel free to <strong><em>disable a rule rather than going through the process of deleting and recreating it</em></strong>. The good news is that <strong><em>EventBridge doesn't charge for disabled schedules</em></strong>, giving you added flexibility in managing your event triggers.</li></p>
+<p><li>In the future, if you find that you no longer need to use the schedule, feel free to <strong><em>disable the rule instead of going through the process of deleting and recreating it</em></strong> in case you need it again accidentally. The great news is that <strong>EventBridge doesn't incur charges for disabled schedules</strong>, providing you with <em>extra flexibility in managing your event triggers</em>.</li></p>
 
 </ol>
 <br>

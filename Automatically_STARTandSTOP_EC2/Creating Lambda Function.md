@@ -116,7 +116,7 @@ def get_instances_by_tags(tags):
 
 <p><li>Even though the Lambda function has been deployed, it will not function properly since the necessary <strong>environment variables</strong> in the deployed code, such as <strong>DEFAULT_TAGS</strong> and <strong>LOG_LEVEL</strong>, have not been set.</li></p>
 
-<p><li>To set now go to Configuration tab (the third tab next to Code tab). Choose Environment variables from the left pane and then click on Edit tab.</li></p>
+<p><li>To set environment varaibles, go to Configuration tab (the third tab next to Code tab). Choose Environment variables from the left pane and then click on Edit tab.</li></p>
 
 <p><li>A new window will open like the one shown below, choose Add environment variables and add the required environment variables and their values.</li></p>
 <p><li>Click on the Save button to save your changes.</li></p>

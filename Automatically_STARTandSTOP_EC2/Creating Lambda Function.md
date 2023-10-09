@@ -148,27 +148,29 @@ def get_instances_by_tags(tags):
 
 <p><li>You'll receive an execution result located just below the <strong>Test</strong> tab, under the header <strong>Executing function: succeeded</strong>.</li></p>
 
-<p><li></li></p> Navigate to the EC2 console and verify whether the tagged EC2 instances have successfully started running.</li></p>
-
 <p><li>In the provided image, the log output of the test event vividly illustrates the process. The 5th and 6th lines provide details about the designated tags and the test event itself. Meanwhile, the 8th and 9th lines reveal the instance IDs of EC2 instances associated with the specified tags, which were effectively stopped in line with the function role.</li></p>
+
+<p><li>Navigate to the EC2 console and verify whether the tagged EC2 instances have successfully started running.</li></p>
 
 <p><li>To configure a stop test event, do the same steps from 2-5.</li></p>
 <p><li>Just change the Event name in Step 3 to EC2-Stop-Test and change the Event JSON to {“action”: “stop”}.</li></p>
 <p><li>Once more, access the EC2 console to verify the tagged EC2 instances have been stopped successfully.</li></p>
 
 “Fantastic job, fine-tuning your Lambda function! 
-With this complete, you're all set for the next exciting step. Keep up the great momentum as you continue your journey into the world of AWS.</li></p>”
 
-NOTE: There is a little surprise for you on the next page.</li></p> 
+With this complete, you're all set for the next exciting step. Keep up the great momentum as you continue your journey into the world of AWS.”
+
+But wait!! There is a little surprise for you ahead.
+
 Effortlessly Extending EC2 Management to Diverse Instances
 
 <p><li>If you intend to start/stop different EC2 instances, tagged with distinct criteria (If your EC2 instances lack tags, take the initiative to tag them now), you can achieve this by specifying the unique tags associated in Format JSON as “tags”: “tag: key=value”, without any spaces.</li></p>
 
 <p><li>Replace the key and value by your EC2 instance Key-Value pair.</li></p>
-For example:
 
+For example:
 <p><li>In my case, I had another EC2 instance named as Prodsrv _1 with the tags: 
-Project =Prod (Key-Value pair)
+Project =  cProd (Key-Value pair)
 So, I have mentioned it as you can see in the above picture.</li></p>
 <p><li>Now, go back to EC2 management console and check the currently mentioned tagged EC2 instance/instances have been stopped.</li></p>
 

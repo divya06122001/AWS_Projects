@@ -116,23 +116,37 @@ def get_instances_by_tags(tags):
 
 <p><li>Even though the Lambda function has been deployed, it will not function properly since the necessary <strong>environment variables</strong> in the deployed code, such as <strong>DEFAULT_TAGS</strong> and <strong>LOG_LEVEL</strong>, have not been set.</li></p>
 
-<p><li>To set environment varaibles, go to Configuration tab (the third tab next to Code tab). Choose Environment variables from the left pane and then click on Edit tab.</li></p>
+<p><li>To set environment varaibles, click on <strong>Configuration</strong> tab, <strong><em>the third one next to Code tab</em></strong>. Choose <strong>Environment variables</strong> from the left pane and then click on <strong>Edit</strong>.</li></p>
 
-<p><li>A new window will open like the one shown below, choose Add environment variables and add the required environment variables and their values.</li></p>
-<p><li>Click on the Save button to save your changes.</li></p>
-<p><li> Navigate to the General configuration section within the same Configuration tab and click on the Edit button.</li></p>
+<p><li>A new window, similar to the one depicted below, will open. In this window, select <strong>Add environment variables</strong> and input the necessary environment variables along with their respective values as indicated below:</li></p>
 
-<p><li>Scroll down the page and set the timeout value to 10 seconds.</li></p>
-<p><li>Without making any further modifications, simply click on the Save button.</li></p>
+<p><li>You have the flexibility to modify the value of <strong>DEFAULT_TAGS</strong> to match your specific <strong><em>Key:Value pair</em></strong>requirements for your EC2 instance or instances. Simply update the <strong>tag</strong> with your specified Key:Value pair as needed.</li></p>
+  
+<p><li>Click on the <strong>Save</strong> button to save the changes.</li></p>
+<p><li>Navigate to the <strong>General configuration</strong> section from the left pane and click on the <strong>Edit</strong>.</li></p>
 
-Invoking functions with test events 
-<p><li>To configure a test event, choose Test tab (right next to Code tab).</li></p>
-<p><li>Set the Test event action to the default option, which is Create new event.</li></p>
-<p><li>For Event name, enter EC2-Start-Test or whatever you like.</li></p>
-<p><li>Leave all the settings be default and scroll down to Event JSON. Choose Format JSON and write {“action”: “start”}.</li></p>
+<p><li>Scroll down the page and set the <strong>Timeout</strong> value to <strong>10 seconds</strong>, which is typically sufficient for this operation, ensuring a timely response.</li></p>
+<p><li>Without making any further modifications, simply click on the <strong>Save</strong>.</li></p>
+<p><li><strong>You're all set! <em>Your Lambda function has been configured</em></strong> and is now awaiting invocation from the <strong><em>EventBridge event schedule</em></strong>.</li></p>
+<p><li>However, how can we be sure it will work flawlessly? Is our Lambda function error-proof? Let's find out by creating a test event to verify if the Lambda function will perform as expected based on our configuration.</li></p>
+</ol>
 
-<p><li>If you want to save it first, choose Save button or else choose Test button.</li></p>
-<p><li>You’ll get an execution result just below the Test tab under the heading Executing function: succeeded.</li></p>
+<h2 align="left">Invoking functions with test events</h2> 
+<ol>
+<p><li>To configure a test event, select the <strong>Test</strong> tab located right next to the <strong>Code</strong> tab</li></p>
+<p><li>Configure the <strong>Test event action</strong> to the default option, which is <strong>Create new event</strong>.</li></p>
+<p><li>For <strong>Event name</strong>, enter <strong>EC2-Start-Test</strong> or whatever you like.</li></p>
+<p><li>Leave all the settings be default and scroll down to <strong>Event JSON</strong>. Choose <strong>Format JSON</strong> and provide the below mentioned JSON payload.</li></p>
+
+ ```json
+  {
+    "action": "start"
+  }
+ ```
+
+<p><li>You have the option to save the test configuration, although it's primarily for checking the function's functionality. If you prefer to save it, click the <strong>Save</strong> button and then proceed by selecting the <strong>Test</strong> button. If you'd rather not save it, you can simply begin by selecting <strong>Test</strong>.</li></p>
+
+<p><li>You'll receive an execution result located just below the <strong>Test</strong> tab, under the header <strong>Executing function: succeeded</strong>.</li></p>
 
 <p><li></li></p> Navigate to the EC2 console and verify whether the tagged EC2 instances have successfully started running.</li></p>
 

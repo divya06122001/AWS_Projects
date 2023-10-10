@@ -128,7 +128,7 @@ def get_instances_by_tags(tags):
 <p><li>Scroll down the page and set the <strong>Timeout</strong> value to <strong>10 seconds</strong>, which is typically sufficient for this operation, ensuring a timely response.</li></p>
 <p><li>Without making any further modifications, simply click on the <strong>Save</strong>.</li></p>
 <p><li><strong>You're all set! <em>Your Lambda function has been configured</em></strong> and is now awaiting invocation from the <strong><em>EventBridge event schedule</em></strong>.</li></p>
-<p><li>However, how can we be sure it will work flawlessly? Is our Lambda function error-proof? Let's find out by creating a test event to verify if the Lambda function will perform as expected based on our configuration.</li></p>
+However, how can we be sure it will work flawlessly? Is our Lambda function error-proof? Let's find out by creating a test event to verify if the Lambda function will perform as expected based on our configuration.
 </ol>
 
 <h2 align="left">Invoking functions with test events</h2> 

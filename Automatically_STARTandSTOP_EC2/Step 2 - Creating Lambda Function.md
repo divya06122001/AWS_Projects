@@ -22,13 +22,13 @@
   <ul>
     <p><li><strong>Function name:</strong> Enter a name for the function. For example: <strong>LambdaEC2_STARTandSTOP_Function</strong>.</li></p>
     <p><li><strong>Runtime:</strong> Choose <strong>Python 3.11</strong> or the latest version you find.</li></p>
-    <p><li><strong>Architecture:</strong>Choose x86_64.</li></p>
+    <p><li><strong>Architecture:</strong> Choose x86_64.</li></p>
   </ul>
 </li></p>
 
 <p><li>Under <strong>Permissions</strong>, expand <strong>Change default execution role</strong> and then choose <strong>Use an existing role</strong> as we have already create one before.</li></p> 
-<p><li>From the drop-down under <strong>Existing role</strong>, choose the <strong>IAM role</strong> you made beforehand.</li></p>
 <p><li>The picture below offers a clear overview of the Step 7 and Step 8.</li></p>
+<p><li>From the drop-down under <strong>Existing role</strong>, choose the <strong>IAM role</strong> you made beforehand.</li></p>
 <p><li>Leave the other settings as default and proceed with the setup. Click on <strong>Create function</strong> to finalize the creation of your Lambda function.</li></p> 
 
 <p><li>Upon clicking Create function button, the <strong>Function overview</strong> dashboard will open, displaying a visual representation of your Lambda function.</li></p>
@@ -120,7 +120,7 @@ def get_instances_by_tags(tags):
 
 <p><li>A new window, similar to the one depicted below, will open. In this window, select <strong>Add environment variables</strong> and input the necessary environment variables along with their respective values as indicated below:</li></p>
 
-<p><li>You have the flexibility to modify the value of <strong>DEFAULT_TAGS</strong> to match your specific <strong><em>Key:Value pair</em></strong>requirements for your EC2 instance or instances. Simply update the <strong>tag</strong> with your specified Key:Value pair as needed.</li></p>
+<p><li>You have the flexibility to modify the value of <strong>DEFAULT_TAGS</strong> to match your specific <strong><em>Key:Value pair</em></strong> requirements for your <strong>EC2 instance/instances</strong>. Simply update the <strong>tag</strong> with your <strong>specified Key:Value pair</strong> as shown in picture below:</li></p>
   
 <p><li>Click on the <strong>Save</strong> button to save the changes.</li></p>
 <p><li>Navigate to the <strong>General configuration</strong> section from the left pane and click on the <strong>Edit</strong>.</li></p>
@@ -128,9 +128,13 @@ def get_instances_by_tags(tags):
 <p><li>Scroll down the page and set the <strong>Timeout</strong> value to <strong>10 seconds</strong>, which is typically sufficient for this operation, ensuring a timely response.</li></p>
 <p><li>Without making any further modifications, simply click on the <strong>Save</strong>.</li></p>
 <p><li><strong>You're all set! <em>Your Lambda function has been configured</em></strong> and is now awaiting invocation from the <strong><em>EventBridge event schedule</em></strong>.</li></p>
-However, how can we be sure it will work flawlessly? Is our Lambda function error-proof? Let's find out by creating a test event to verify if the Lambda function will perform as expected based on our configuration.
 </ol>
+<br>
+<p align= "center"><strong>However, how can we be sure it will work flawlessly? Is our Lambda function error-proof? Let's find out by creating a test event to verify if the Lambda function will perform as expected based on our configuration.</strong></p>
 
+<!--------------------------------------- Steps for Lambda Test Creation begins from here --------------------------------------------->
+
+<br>
 <h2 align="left">Invoking functions with test events</h2> 
 <ol>
 <p><li>To configure a test event, select the <strong>Test</strong> tab located right next to the <strong>Code</strong> tab</li></p>
@@ -144,11 +148,12 @@ However, how can we be sure it will work flawlessly? Is our Lambda function erro
   }
  ```
 
+<p><li>This <strong>JSON payload <em>instructs</em> the Lambda function to start AWS EC2 instance/instances</strong>, indicating the desired action for EC2 management.</li></p>
 <p><li>You have the option to save the test configuration, although it's primarily for checking the function's functionality. If you prefer to save it, click the <strong>Save</strong> button and then proceed by selecting the <strong>Test</strong> button. If you'd rather not save it, you can simply begin by selecting <strong>Test</strong>.</li></p>
 
 <p><li>You'll receive an execution result located just below the <strong>Test</strong> tab, under the header <strong>Executing function: succeeded</strong>.</li></p>
 
-<p><li>In the provided image, the log output of the test event vividly illustrates the process. The 5th and 6th lines provide details about the designated tags and the test event itself. Meanwhile, the 8th and 9th lines reveal the instance IDs of EC2 instances associated with the specified tags, which were effectively stopped in line with the function role.</li></p>
+<p><li>In the image provided, you can clearly see how the test event's log output vividly illustrates the process. The <strong><em>5th and 6th lines</em></strong> provide details about the <strong><em>tags we set and the test event we created</em></strong>. Meanwhile, the <strong><em>5th and 6th lines show the IDs of the EC2 instances that matched the tags we specified, and these instances were successfully stopped as the function ran<strong><em>.</li></p>
 
 <p><li>Navigate to the EC2 console and verify whether the tagged EC2 instances have successfully started running.</li></p>
 
@@ -170,7 +175,7 @@ Effortlessly Extending EC2 Management to Diverse Instances
 
 For example:
 <p><li>In my case, I had another EC2 instance named as Prodsrv _1 with the tags: 
-Project =  cProd (Key-Value pair)
+Project =  Prod (Key-Value pair)
 So, I have mentioned it as you can see in the above picture.</li></p>
 <p><li>Now, go back to EC2 management console and check the currently mentioned tagged EC2 instance/instances have been stopped.</li></p>
 

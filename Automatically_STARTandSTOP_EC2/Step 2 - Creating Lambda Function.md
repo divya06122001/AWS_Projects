@@ -150,10 +150,13 @@ def get_instances_by_tags(tags):
 
 <p><li>This <strong>JSON payload <em>instructs</em> the Lambda function to start AWS EC2 instance/instances</strong>, indicating the desired action for EC2 management.</li></p>
 <p><li>You have the option to save the test configuration, although it's primarily for checking the function's functionality. If you prefer to save it, click the <strong>Save</strong> button and then proceed by selecting the <strong>Test</strong> button. If you'd rather not save it, you can simply begin by selecting <strong>Test</strong>.</li></p>
-
 <p><li>You'll receive an execution result located just below the <strong>Test</strong> tab, under the header <strong>Executing function: succeeded</strong>.</li></p>
 
-<p><li>In the image provided, you can clearly see how the test event's log output vividly illustrates the process. The <strong><em>5th and 6th lines</em></strong> provide details about the <strong><em>tags we set and the test event we created</em></strong>. Meanwhile, the <strong><em>5th and 6th lines show the IDs of the EC2 instances that matched the tags we specified, and these instances were successfully stopped as the function ran<strong><em>.</li></p>
+<p><li>In the image provided, you can clearly see how the test event's log output vividly illustrates the process.
+  <ul>
+    <p><li>This line seems to define default tags for the execution context.</li></p>
+      
+    </li> The <strong><em>5th and 6th lines</em></strong> provide details about the <strong><em>tags we set and the test event we created</em></strong>. Meanwhile, the <strong><em>5th and 6th lines show the IDs of the EC2 instances that matched the tags we specified, and these instances were successfully stopped as the function ran<strong><em>.</li></p>
 
 <p><li>Navigate to the EC2 console and verify whether the tagged EC2 instances have successfully started running.</li></p>
 

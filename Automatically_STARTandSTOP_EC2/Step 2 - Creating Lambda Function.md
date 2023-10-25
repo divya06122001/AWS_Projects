@@ -1,4 +1,4 @@
-<h1 align= "center">Creating Lambda Function</h1>
+ <h1 align= "center">Creating Lambda Function</h1>
 <div align="center">
   <img src="" alt="Architecture of Lambda Function" width="800" height="400">
 </div>
@@ -154,9 +154,13 @@ def get_instances_by_tags(tags):
 
 <p><li>In the image provided, you can clearly see how the test event's log output vividly illustrates the process.
   <ul>
+    <p><li>The <strong><em>5th and 6th lines</em></strong> provide details about the <strong><em>tags we set and the test event we created</em></strong>. Meanwhile, the <strong><em>5th and 6th lines show the IDs of the EC2 instances that matched the tags we specified, and these instances were successfully stopped as the function ran<strong><em>.</em>
+  </ul>
     <p><li>This line seems to define default tags for the execution context.</li></p>
       
-    </li> The <strong><em>5th and 6th lines</em></strong> provide details about the <strong><em>tags we set and the test event we created</em></strong>. Meanwhile, the <strong><em>5th and 6th lines show the IDs of the EC2 instances that matched the tags we specified, and these instances were successfully stopped as the function ran<strong><em>.</li></p>
+
+
+</li></p>
 
 <p><li>Navigate to the EC2 console and verify whether the tagged EC2 instances have successfully started running.</li></p>
 

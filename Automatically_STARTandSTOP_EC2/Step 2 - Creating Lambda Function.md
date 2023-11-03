@@ -155,12 +155,16 @@ def get_instances_by_tags(tags):
 <p><li>In the image provided, you can clearly see how the test event's log output vividly illustrates the process.
   <ul>
     <p><li>The <strong><em>1<sup>st</sup> line</em></strong> indicates the <strong>default tags</strong> applied to the Lambda function i.e., <strong>Project = UAT</strong>.</li></p>
-    <p><li>The <strong><em>2<sup>nd</sup> line</em></strong> specifies the <strong>logging level</strong>, where a <strong>level of 20</strong> usually corresponds to <strong>INFO</strong>. <strong><em>It's indicating that the Lambda function is logging information at the INFO level</em></strong>.</li></p>
-    <p><li>The <strong><em>3<sup>rd</sup> line (log entry)</em></strong> shows an <strong>informational message</strong> i.e., Lambda function has <strong>discovered credentials in environment variables</strong>.</li></p>
-    <p><li>The <strong><em>4<sup>th</sup> line</em></strong> represents the <strong>start of the Lambda function execution</strong>. <em>It provides details such as the <strong>RequestId</strong> and the <strong>Version</strong> which is set to the <strong>latest version</strong></em>.</li></p>
-    <p><li>The <strong><em>5<sup>th</sup> line</em></strong> displays the input event that triggered the Lambda function i.e., <strong>"action" = "start."</strong>.</li></p>
-    <p><li>The <strong><em>5th and 6th lines</em></strong> provide details about the <strong><em>tags we set and the test event we created</em></strong>. Meanwhile, the <strong><em>5<sup>th</sup> and 6th lines show the IDs of the EC2 instances that matched the tags we specified, and these instances were successfully stopped as the function ran</em></strong>.
-    <p><li>This line seems to define default tags for the execution context.</li></p>
+    <p><li>The <strong><em>2<sup>nd</sup> line</em></strong> specifies the <strong>logging level</strong>, where <strong>level 20 = INFO</strong>. It's indicating that the <strong>Lambda function is logging information at the INFO level</strong>.</li></p>
+    <p><li>The <strong><em>3<sup>rd</sup> line (log entry)</em></strong> shows an informational message i.e., <strong>Lambda function has discovered credentials in environment variables</strong>.</li></p>
+    <p><li>The <strong><em>4<sup>th</sup> line</em></strong> represents the <strong>start of the Lambda function execution</strong>. It provides details such as the <strong>RequestId and the Version</strong> which is set to the <strong>latest version</strong>.</li></p>
+    <p><li>The <strong><em>5<sup>th</sup> line</em></strong> displays the <strong>input event that triggered the Lambda function</strong> i.e., <strong>"action" = "start."</strong>.</li></p>
+    <p><li>The <strong><em>6<sup>th</sup> line</em></strong> indicates the <strong>tags applied within the Lambda function</strong> i.e., <strong>Project = UAT</strong>.</li></p>
+    <p><li>The <strong><em>8<sup>th</sup></em></strong> and the <strong><em>9<sup>th</sup> lines</em></strong> provides <strong>details about the EC2 instances that satisfy the specified tag conditions</strong>.</li></p>
+    <p><li>The <strong><em>10<sup>th</sup> line</em></strong> <em>lists the instance IDs</em>, <strong>indicating the EC2 instances that are relevant to the Lambda function</strong>.</li></p>
+    <p><li>The <strong><em>11<sup>th</sup> line</em></strong> signifies an informational message i.e., <strong>start of the EC2 instances</strong>.</li></p>
+    <p><li>The <strong><em>12<sup>th</sup> line</em></strong> marks the <strong>end of the Lambda function execution</strong> and provides the RequestId.
+    <p><li>The <strong><em>13<sup>th</sup> line</em></strong> reports various details about the <strong>function execution, including the duration, memory usage, and initialization time</strong>.</li></p>
   </ul>
 </li></p>
 

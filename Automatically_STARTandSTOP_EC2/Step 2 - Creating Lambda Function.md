@@ -161,7 +161,7 @@ def get_instances_by_tags(tags):
     <p><li>The <strong><em>5<sup>th</sup> line</em></strong> displays the <strong>input event that triggered the Lambda function</strong> i.e., <strong>"action" = "start."</strong>.</li></p>
     <p><li>The <strong><em>6<sup>th</sup> line</em></strong> indicates the <strong>tags applied within the Lambda function</strong> i.e., <strong>Project = UAT</strong>.</li></p>
     <p><li>The <strong><em>8<sup>th</sup></em></strong> and the <strong><em>9<sup>th</sup> lines</em></strong> provides <strong>details about the EC2 instances that satisfy the specified tag conditions</strong>.</li></p>
-    <p><li>The <strong><em>10<sup>th</sup> line</em></strong> <em>lists the instance IDs</em>, <strong>indicating the EC2 instances that are relevant to the Lambda function</strong>.</li></p>
+    <p><li>The <strong><em>10<sup>th</sup> line</em></strong> lists the instance IDs, <strong>indicating the EC2 instances that are relevant to the Lambda function</strong>.</li></p>
     <p><li>The <strong><em>11<sup>th</sup> line</em></strong> signifies an informational message i.e., <strong>start of the EC2 instances</strong>.</li></p>
     <p><li>The <strong><em>12<sup>th</sup> line</em></strong> marks the <strong>end of the Lambda function execution</strong> and provides the RequestId.
     <p><li>The <strong><em>13<sup>th</sup> line</em></strong> reports various details about the <strong>function execution, including the duration, memory usage, and initialization time</strong>.</li></p>
@@ -170,27 +170,44 @@ def get_instances_by_tags(tags):
 
 <p><li>Navigate to the EC2 console and verify whether the tagged EC2 instances have successfully started running.</li></p>
 
-<p><li>To configure a stop test event, do the same steps from 2-5.</li></p>
-<p><li>Just change the Event name in Step 3 to EC2-Stop-Test and change the Event JSON to {“action”: “stop”}.</li></p>
+<p><li>Now, to <strong>configure a stop test event</strong>, follow the same steps as before with the following modifications:
+  <ul>
+    <p><li>In <strong>Step 3</strong>, set the <strong>Event name to EC2-Stop-Test</strong>.</li>
+    <p><li>In <strong>Step 4</strong>, use the following <strong>Event JSON:</strong></li></p>
+ 
+```json
+    {
+      "action": "stop"
+    }
+ ```
+
+  </ul>
+</li></p>
+
 <p><li>Once more, access the EC2 console to verify the tagged EC2 instances have been stopped successfully.</li></p>
+</ol>
+  
+<br>
+<p align= "center"><strong><em>"Fantastic job, fine-tuning your Lambda function! With this complete, you're all set for the next exciting step. Keep up the great momentum as you continue your journey into the world of AWS."</em></strong></p>
+<br>
 
-“Fantastic job, fine-tuning your Lambda function! 
-
-With this complete, you're all set for the next exciting step. Keep up the great momentum as you continue your journey into the world of AWS.”
-
-But wait!! There is a little surprise for you ahead.
-
-Effortlessly Extending EC2 Management to Diverse Instances
-
-<p><li>If you intend to start/stop different EC2 instances, tagged with distinct criteria (If your EC2 instances lack tags, take the initiative to tag them now), you can achieve this by specifying the unique tags associated in Format JSON as “tags”: “tag: key=value”, without any spaces.</li></p>
-
-<p><li>Replace the key and value by your EC2 instance Key-Value pair.</li></p>
-
-For example:
-<p><li>In my case, I had another EC2 instance named as Prodsrv _1 with the tags: 
-Project =  Prod (Key-Value pair)
-So, I have mentioned it as you can see in the above picture.</li></p>
-<p><li>Now, go back to EC2 management console and check the currently mentioned tagged EC2 instance/instances have been stopped.</li></p>
+<p align= "center"><strong><em>But wait!! There is a little surprise for you ahead.</em></strong></p>
 
 
-“With your newfound knowledge and the power of tailored tagging, you're now equipped to expertly manage a diverse array of EC2 instances.</li></p>”
+<!--------------------------------------- Steps for effectively managing EC2 instances with various tags --------------------------------------------->
+
+<br>
+<h2 align="left">Effortlessly Extending EC2 Management to Diverse Instances</h2> 
+<ol>
+  <p><li>If you intend to start/stop different EC2 instances, tagged with distinct criteria (If your EC2 instances lack tags, take the initiative to tag them now), you can achieve this by specifying the unique tags associated in Format JSON as “tags”: “tag: key=value”, without any spaces.</li></p>
+  <p><li>Replace the key and value by your EC2 instance Key-Value pair.</li></p>
+<strong>For example:</strong>
+  <p><li>In my case, I had another EC2 instance named as Prodsrv _1 with the tags:</li></p>
+    <strong>Project =  Prod (Key-Value pair)</strong>
+  
+  <p><li>Now, go back to EC2 management console and check the currently mentioned tagged EC2 instance/instances have been stopped.</li></p>
+</ol>
+
+<br>
+<p align= "center"><strong><em>“With your newfound knowledge and the power of tailored tagging, you're now equipped to expertly manage a diverse array of EC2 instances.”</em></strong></p>
+<br>

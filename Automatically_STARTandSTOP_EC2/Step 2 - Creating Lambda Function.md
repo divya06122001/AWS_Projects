@@ -198,11 +198,16 @@ def get_instances_by_tags(tags):
 <h2 align="left">Effortlessly Extending EC2 Management to Diverse Instances</h2> 
 
 <ol>
-  <p><li>If you intend to start/stop different EC2 instances, <strong>tagged with distinct criteria</strong> <em>(If your EC2 instances lack tags, take the initiative to tag them now)</em>, you can achieve this by specifying the unique tags associated in <strong>Format JSON</strong> as <strong>“tags”: “tag: key=value”</strong>, without any spaces.</li></p>
-  <p><li>Replace the key and value by your EC2 instance Key-Value pair.</li></p>
-  <p><li><strong>For example:</strong>In my case, I had another EC2 instance named as Prodsrv _1 with the tags:</li></p>
-      <strong>Project =  Prod (Key-Value pair)</strong>
+  <p><li>If you intend to start/stop different EC2 instances, <strong>tagged with distinct criteria</strong> <em>(If your EC2 instances lack tags, take the initiative to tag them now)</em>, you can achieve this by specifying the unique tags associated in <strong>Format JSON</strong> as <strong>“tags”: “tag:key=value”</strong>, without any spaces.</li></p>
+  <p><li>In my specific scenario, I had an additional EC2 instance named <strong>Prodsrv_1</strong> with the tags: <strong>Project =  Prod</strong> <em>(Key-Value pair)</em>.</li></p>
+  <p><li>Consequently, I modified the JSON format of the test event to:</li></p>
   
+```json
+
+
+ ```
+
+ 
   <p><li>Now, go back to EC2 management console and check the currently mentioned tagged EC2 instances have been started/stopped.</li></p>
 </ol>
 

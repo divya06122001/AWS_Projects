@@ -225,9 +225,14 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
 </div>
   
 <p><li>In the future, if you find that you no longer need to use the schedule, feel free to <strong><em>disable the rule instead of going through the process of deleting and recreating it</em></strong> in case you need it again accidentally. The great news is that <strong>EventBridge doesn't incur charges for disabled schedules</strong>, providing you with <em>extra flexibility in managing your event triggers</em>.</li></p>
-
 </ol>
-<br>
 
+<!--------------------------------------- Steps for effectively scheduling EC2 instances with various tags --------------------------------------------->
+
+<br>
+<h2 align="left">Effortlessly Extending EC2 Management to Diverse Instances</h2> 
+
+<ol>
+<br>
 <p align= "center"><strong><em>:partying_face:🎉 Congratulations, you've just woven a web of time with your EventBridge schedules! ⏰✨ Now, your events are all set to dance to their own beats. Remember, you're the DJ of this scheduling party! 🎶💃 Keep rocking those automations and let the events unfold in style! 🌟:metal:🌟 </em></strong></p>
 

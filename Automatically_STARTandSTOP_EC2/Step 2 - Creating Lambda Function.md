@@ -188,24 +188,22 @@ def get_instances_by_tags(tags):
 </ol>
   
 <br>
-<p align= "center"><strong><em>"Fantastic job, fine-tuning your Lambda function! With this complete, you're all set for the next exciting step. Keep up the great momentum as you continue your journey into the world of AWS."</em></strong></p>
-<br>
+<p align= "center"><strong><em>"Fantastic job:clap:, fine-tuning your Lambda function! With this complete, you're all set for the next exciting step. Maintain the impressive momentum as you progress in your automation journey for EC2 management."</em></strong></p>
 
-<p align= "center"><strong><em>But wait!! There is a little surprise for you ahead.</em></strong></p>
-
+<p align= "center"><strong>But wait!!:hand: There is a little surprise:gift: for you ahead.</strong></p>
 
 <!--------------------------------------- Steps for effectively managing EC2 instances with various tags --------------------------------------------->
 
 <br>
 <h2 align="left">Effortlessly Extending EC2 Management to Diverse Instances</h2> 
+
 <ol>
-  <p><li>If you intend to start/stop different EC2 instances, tagged with distinct criteria (If your EC2 instances lack tags, take the initiative to tag them now), you can achieve this by specifying the unique tags associated in Format JSON as “tags”: “tag: key=value”, without any spaces.</li></p>
+  <p><li>If you intend to start/stop different EC2 instances, <strong>tagged with distinct criteria</strong> <em>(If your EC2 instances lack tags, take the initiative to tag them now)</em>, you can achieve this by specifying the unique tags associated in <strong>Format JSON</strong> as <strong>“tags”: “tag: key=value”</strong>, without any spaces.</li></p>
   <p><li>Replace the key and value by your EC2 instance Key-Value pair.</li></p>
-<strong>For example:</strong>
-  <p><li>In my case, I had another EC2 instance named as Prodsrv _1 with the tags:</li></p>
-    <strong>Project =  Prod (Key-Value pair)</strong>
+  <p><li><strong>For example:</strong>In my case, I had another EC2 instance named as Prodsrv _1 with the tags:</li></p>
+      <strong>Project =  Prod (Key-Value pair)</strong>
   
-  <p><li>Now, go back to EC2 management console and check the currently mentioned tagged EC2 instance/instances have been stopped.</li></p>
+  <p><li>Now, go back to EC2 management console and check the currently mentioned tagged EC2 instances have been started/stopped.</li></p>
 </ol>
 
 <br>

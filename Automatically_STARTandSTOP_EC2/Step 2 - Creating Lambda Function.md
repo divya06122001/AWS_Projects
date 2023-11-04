@@ -203,10 +203,12 @@ def get_instances_by_tags(tags):
   <p><li>Consequently, I modified the JSON format of the test event to:</li></p>
   
 ```json
-
-
+{
+  "tags": "tag:Project=Prod",
+  "action": "start/stop"
+}
  ```
-
+<p align= "center">OR</p>
  
   <p><li>Now, go back to EC2 management console and check the currently mentioned tagged EC2 instances have been started/stopped.</li></p>
 </ol>

@@ -231,8 +231,10 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
 
 <br>
 <h2 align="left">Effortlessly Extending EC2 Management to Diverse Instances</h2> 
-
+<br>
+To extend efficient management to diverse EC2 instances, as you saw in the last part of the Lambda function, you should also create a schedule for them to allow for automatic management. While the steps are nearly identical, let me guide you through the process. Here are the steps to achieve this:
 <ol>
+  <p><li></li></p>
 <br>
 <p align= "center"><strong><em>:partying_face:🎉 Congratulations, you've just woven a web of time with your EventBridge schedules! ⏰✨ Now, your events are all set to dance to their own beats. Remember, you're the DJ of this scheduling party! 🎶💃 Keep rocking those automations and let the events unfold in style! 🌟:metal:🌟 </em></strong></p>
 

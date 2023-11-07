@@ -15,7 +15,6 @@
 </div>
 
   <p><li>Switch to your desired <strong>AWS region</strong> by selecting it from the <strong>Region</strong> dropdown menu located in the top-right corner of the console.</li></p>
-
   <p><li>On the Dashboard page, click on <strong>EventBridge Schedule</strong> option and then choose <strong>Create schedule</strong>.</li></p>
   <p><li>You will encounter a window that resembles the one shown below.</li></p>
 
@@ -235,6 +234,11 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
 To extend efficient management to diverse EC2 instances, as you saw in the last part of the Lambda function, you should also create a schedule for them to allow for automatic management. While the steps are nearly identical, let me guide you through the process. Here are the steps to achieve this:
 <ol>
   <p><li>On the Dashboard page, click on <strong>EventBridge Schedule</strong> option and then choose <strong>Create schedule</strong>.</li></p>
+  <p><li>On the <strong>Specify schedule detail</strong> page, in the <strong>Schedule name and description section</strong> do the following:
+    <ul> 
+      <p><li>For <strong>Schedule name</strong>, enter a name for your schedule. For example: <strong>EC2StartEventSchedule</strong>.</li></p>
+      <p><li>For <strong>Description - <em>optional</em></strong>, enter a description for your schedule.<br>For example, <strong>A scheduled start event to trigger the Lambda function for initiating the EC2 instance launch</strong>.</li></p>
+      <p><li>For <strong>Schedule group</strong>, choose a schedule group from the drop-down options.
   <p><li></li></p>
 </ol>
 <br>

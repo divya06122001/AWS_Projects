@@ -36,7 +36,7 @@
       <p><li>For <strong>Name</strong>, enter a name for your schedule group. For example: <strong>EC2_Schedule_Group</strong>.</li></p>
       <p><li>Click on <strong>Add new tag</strong> if you want to add tags to your schedule group.</li></p>
       <p><li>Now, click on <strong>Create schedule group</strong>.</li></p>
-      <p><li>You have successfully created a new schedule group. Now, close this window and go back to the previous one. From there, just pick your new schedule group from the list.</li></p>
+      <p><li>You have successfully created a new schedule group. Now, close this window and go back to the previous one. From there, just pick your newly created schedule group from the list.</li></p>
     </ul>
   </li></p>
     
@@ -60,7 +60,7 @@
                   <td style="border: 1px solid #444;">8</td>
                   <td>?</td>
                   <td>*</td>
-                  <td style="border: 1px solid #444;">2-6</td>
+                  <td style="border: 1px solid #444;">Mon-Fri</td>
                   <td>*</td>
                 </tr>
                </table>
@@ -192,10 +192,10 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
         </tr>
         <tr align="center">
           <td>00</td>
-          <td style="border: 1px solid #444;">9</td>
+          <td style="border: 1px solid #444;">6</td>
           <td>?</td>
           <td>*</td>
-          <td style="border: 1px solid #444;">2-6</td>
+          <td style="border: 1px solid #444;">Mon-Fri</td>
           <td>*</td>
         </tr>
       </table>
@@ -215,7 +215,7 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/STOP+Schedule+Detail.png" alt="AWS EventBridge STOP Event details" width="950" height="400">
 </div>
 
-<p><li>To verify that your schedule invokes the Amazon Lambda target and stops the running EC2 instance, check the status of the EC2 instance around the set trigger time i.e., <strong>9:00 PM in the night</strong>.</li></p>
+<p><li>To verify that your schedule invokes the Amazon Lambda target and stops the running EC2 instance, check the status of the EC2 instance around the set trigger time i.e., <strong>6:00 PM in the evening</strong>.</li></p>
 
 <p><li>Now that we've set up schedules for both the <strong>Start Event</strong> and the <strong>Stop Event</strong> for our Lambda function, the next step is to wait for the magic to happen. However, before that, <strong><em>take a look at the status of both events to ensure they are enabled and functioning correctly</em></strong>.</li></p>
 
@@ -235,11 +235,41 @@ To extend efficient management to diverse EC2 instances, as you saw in the last 
 <ol>
   <p><li>On the Dashboard page, click on <strong>EventBridge Schedule</strong> option and then choose <strong>Create schedule</strong>.</li></p>
   <p><li>On the <strong>Specify schedule detail</strong> page, in the <strong>Schedule name and description section</strong> do the following:
-    <ul> 
-      <p><li>For <strong>Schedule name</strong>, enter a name for your schedule. For example: <strong>EC2StartEventSchedule</strong>.</li></p>
-      <p><li>For <strong>Description - <em>optional</em></strong>, enter a description for your schedule.<br>For example, <strong>A scheduled start event to trigger the Lambda function for initiating the EC2 instance launch</strong>.</li></p>
-      <p><li>For <strong>Schedule group</strong>, choose a schedule group from the drop-down options.
-  <p><li></li></p>
+    <ul>
+      <p><li>For <strong>Schedule name</strong>, enter a name for your schedule: <strong>DiverseTaggedEC2Management</strong>.</li></p>
+      <p><li>For <strong>Description - <em>optional</em></strong>, enter description for your schedule: <strong>A schedule for efficiently managing various EC2 instances with distinct tags</strong>.</li></p>
+      <p><li>For <strong>Schedule group</strong>, choose the previously created schedule group <strong>(EC2_Schedule_Group)</strong> from the drop-down options.</li></p>
+    </ul>
+  </li></p>
+  <p><li>In the <strong>Schedule pattern</strong> section, do the following:
+      <ul>
+        <p><li>For <strong>Occurrence</strong>, choose <strong>One-time schedule</strong> or <strong>Recurring schedule</strong> based on the nature of the event: <strong>Singular</strong> or <strong>Repetitive</strong> respectively.</li></p>
+        <p><li>For <strong>Schedule type</strong>, choose <strong>Cron-based schedule</strong>.</li></p>
+        <p><li>For <strong>Cron expression</strong>, fill as below:</li></p>
+              <div align="left">
+              <table style="border-collapse: collapse; border: 2px solid #444;">
+                <tr>
+                  <th>Minutes</th>
+                  <th style="border: 1px solid #444; padding: 6px 12px;">Hours</th>
+                  <th>Day of Month</th>
+                  <th>Month</th>
+                  <th style="border: 1px solid #444; padding: 6px 12px;">Day of the Week</th>
+                  <th>Year</th>
+                </tr>
+                <tr align="center">
+                  <td>00</td>
+                  <td style="border: 1px solid #444;">8</td>
+                  <td>?</td>
+                  <td>*</td>
+                  <td style="border: 1px solid #444;">Sat</td>
+                  <td>*</td>
+                </tr>
+               </table>
+              </div>
+      </ul>
+    </li></p>
+        <p><li>Take a casual look at the <strong>Next 10 trigger dates</strong> to confirm accuracy and avoid any potential errors.</li></p>
+        <p><li></li></p>
 </ol>
 <br>
 <p align= "center"><strong><em>:partying_face:🎉 Congratulations, you've just woven a web of time with your EventBridge schedules! ⏰✨ Now, your events are all set to dance to their own beats. Remember, you're the DJ of this scheduling party! 🎶💃 Keep rocking those automations and let the events unfold in style! 🌟:metal:🌟 </em></strong></p>

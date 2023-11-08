@@ -273,10 +273,10 @@ To extend efficient management to diverse EC2 instances, as you saw in the last 
               </div>
         <p><li>Take a casual look at the <strong>Next 10 trigger dates</strong> to confirm accuracy and avoid any potential errors.</li></p>
         <p><li>For <strong>Flexible time window</strong>, choose <strong>Off</strong> to turn off the option.</li></p>
-        <p><li>Click on <strong>Next</strong>.</li></p>
       </ul>
     </li></p>
-
+  <p><li>Click on <strong>Next</strong>.</li></p>
+        
   <p><li>On the <strong>Select target</strong> page, choose the AWS API operation that EventBridge Scheduler invokes:
     <ul>
       <p><li>For <strong>Target API</strong>, choose <strong>Templated targets</strong>.</li></p>
@@ -294,7 +294,12 @@ To extend efficient management to diverse EC2 instances, as you saw in the last 
 }
 ```
 
-  <
+  <p><li>Click on <strong>Next</strong>.</li></p>\
+  <p><li>Keeping everything as default, scroll down to bottom and choose <strong>Use existing role</strong> under <strong>Permissions</strong>.</li></p>
+  <p><li>Now, choose the previously made IAM role and then click on <strong>Next</strong>.</li></p>
+  <p><li>Review all the things and then click on <strong>Create schedule</strong>.</li></p>
+  <p><li>Voila, you're done. See the list of schedules and check the status of your newly created schedule.</li></p>
+  
 </ol>
 <br>
 <p align= "center"><strong><em>:partying_face:🎉 Congratulations, you've just woven a web of time with your EventBridge schedules! ⏰✨ Now, your events are all set to dance to their own beats. Remember, you're the DJ of this scheduling party! 🎶💃 Keep rocking those automations and let the events unfold in style! 🌟:metal:🌟 </em></strong></p>

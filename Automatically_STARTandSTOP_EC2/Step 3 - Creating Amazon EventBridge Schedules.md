@@ -102,11 +102,13 @@
 </div>
       <p><li>In the <strong>Invoke</strong> section, choose the <strong>Lambda function</strong> that we have created previously from the dropdown list.</li></p>
       <p><li>For the <strong>Payload</strong>, provide the below mentioned JSON payload. <strong>Payload</strong> is the data sent to <strong>EventBridge Scheduler's target</strong> i.e., <strong>our Lambda function</strong>, <em>during a scheduled event trigger</em>.</li></p>
-    
-      {
-        "action": "start"
-      }    
 
+```json
+{
+  "action": "start"
+}    
+```
+    
 This JSON message includes <em>a single key-value pair with an <strong>"action"</strong> field set to <strong>"start"</strong>, indicating the desired process to initiate</em>. This tells the <strong>EventBridge Scheduler to tell the Lambda function to start EC2 instances</strong>. It's a way for them to communicate what action needs to be done.
     </ul>
   </li></p>
@@ -203,10 +205,12 @@ This JSON message includes <em>a single key-value pair with an <strong>"action"<
 
 <p><li>In step 13, For the <strong>Payload</strong>, provide the below mentioned JSON payload.</li></p>
          
-          {
-            "action": "stop"
-          }
-    
+```json
+{
+  "action": "stop"
+}    
+```
+  
    </ul>
 </li></p>
 <p><li>Under the <strong>Status</strong> column, verify that the new schedule is <strong>Enabled</strong>.</li></p>
@@ -241,6 +245,7 @@ To extend efficient management to diverse EC2 instances, as you saw in the last 
       <p><li>For <strong>Schedule group</strong>, choose the previously created schedule group <strong>(EC2_Schedule_Group)</strong> from the drop-down options.</li></p>
     </ul>
   </li></p>
+  
   <p><li>In the <strong>Schedule pattern</strong> section, do the following:
       <ul>
         <p><li>For <strong>Occurrence</strong>, choose <strong>One-time schedule</strong> or <strong>Recurring schedule</strong> based on the nature of the event: <strong>Singular</strong> or <strong>Repetitive</strong> respectively.</li></p>
@@ -266,10 +271,30 @@ To extend efficient management to diverse EC2 instances, as you saw in the last 
                 </tr>
                </table>
               </div>
+        <p><li>Take a casual look at the <strong>Next 10 trigger dates</strong> to confirm accuracy and avoid any potential errors.</li></p>
+        <p><li>For <strong>Flexible time window</strong>, choose <strong>Off</strong> to turn off the option.</li></p>
+        <p><li>Click on <strong>Next</strong>.</li></p>
       </ul>
     </li></p>
-        <p><li>Take a casual look at the <strong>Next 10 trigger dates</strong> to confirm accuracy and avoid any potential errors.</li></p>
-        <p><li></li></p>
+
+  <p><li>On the <strong>Select target</strong> page, choose the AWS API operation that EventBridge Scheduler invokes:
+    <ul>
+      <p><li>For <strong>Target API</strong>, choose <strong>Templated targets</strong>.</li></p>
+      <p><li>Choose <strong>AWS Lambda Invoke</strong>.</li></p> 
+    </ul>
+  </li></p>
+  
+  <p><li>In the <strong>Invoke</strong> section, choose the <strong>Lambda function</strong> from the dropdown list, that we have created previously .</li></p>
+  <p><li>For the <strong>Payload</strong>, provide the below mentioned <strong>Payload</strong>.</li></p>
+
+```json
+{
+  "tags": "tag:Project=Prod",
+  "action": "start"
+}
+```
+
+  <
 </ol>
 <br>
 <p align= "center"><strong><em>:partying_face:🎉 Congratulations, you've just woven a web of time with your EventBridge schedules! ⏰✨ Now, your events are all set to dance to their own beats. Remember, you're the DJ of this scheduling party! 🎶💃 Keep rocking those automations and let the events unfold in style! 🌟:metal:🌟 </em></strong></p>

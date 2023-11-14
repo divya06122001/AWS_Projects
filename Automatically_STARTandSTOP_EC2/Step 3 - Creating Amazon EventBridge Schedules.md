@@ -1,6 +1,6 @@
 <h1 align= "center">Crafting a schedule using the EventBridge Scheduler console</h1>
 <div align="center">
-  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/AWS+EventBridge+Title.png" alt="Title Image" width="800" height="500">
+  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Title+Image.png" alt="Title Image" width="800" height="500">
 </div>
 
 <h2 align= "left">Creating a new EventBridge schedule</h2>
@@ -26,17 +26,22 @@
     <ul> 
       <p><li>For <strong>Schedule name</strong>, enter a name for your schedule. For example: <strong>EC2StartEventSchedule</strong>.</li></p>
       <p><li>For <strong>Description - <em>optional</em></strong>, enter a description for your schedule.<br>For example, <strong>A scheduled start event to trigger the Lambda function for initiating the EC2 instance launch</strong>.</li></p>
-      <p><li>For <strong>Schedule group</strong>, choose a schedule group from the drop-down options. Certainly, you can choose the <strong>default</strong> option. <br> However, I recommend having a dedicated schedule group. <strong>Why?</strong> Because, <strong><em>Schedule groups allows you to categorize and organize multiple schedules for better management and control for each specific schedule.</em></strong></li></p>
-      <p><li>To <strong>create a new schedule group</strong>, click on the anchor text <strong>create your own schedule group</strong> written under the schedule group heading.</li></p>
-      <p><li>A new window will open shown as below:</li></p>
+      <p><li>For <strong>Schedule group</strong>, choose a schedule group from the drop-down options. <br>
+        Certainly, you can choose the <strong>default</strong> option. However, I recommend having a dedicated schedule group. <strong>Why?</strong> Because, <strong><em>Schedule groups allows you to categorize and organize multiple schedules for better management and control for each specific schedule.</em></strong>
+        <ol>
+          <p><li>To <strong>create a new schedule group</strong>, click on the anchor text <strong>create your own schedule group</strong> written under the schedule group heading.</li></p>
+          <p><li>A new window will open shown as below:</li></p>
 
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Create+Schedule+Group.png" alt="EventBridge Schedule Group" width="950" height="350">
 </div>
-      <p><li>For <strong>Name</strong>, enter a name for your schedule group. For example: <strong>EC2_Schedule_Group</strong>.</li></p>
-      <p><li>Click on <strong>Add new tag</strong> if you want to add tags to your schedule group.</li></p>
-      <p><li>Now, click on <strong>Create schedule group</strong>.</li></p>
-      <p><li>You have successfully created a new schedule group. Now, close this window and go back to the previous one. From there, just pick your newly created schedule group from the list.</li></p>
+          <p><li>For <strong>Name</strong>, enter a name for your schedule group. For example: <strong>EC2_Schedule_Group</strong>.</li></p>
+          <p><li>Click on <strong>Add new tag</strong> if you want to add tags to your schedule group.</li></p>
+          <p><li>Now, click on <strong>Create schedule group</strong>.</li></p>
+          <p><li>You have successfully created a new schedule group. Now, close this window and go back to the previous one.</li></p>
+        </ol>
+      </li></p> 
+      <p><li>Now, just pick your newly created <strong>(EC2_Schedule_Group)</strong> from the drop-down list of <strong>Schedule group</strong>.</li></p>
     </ul>
   </li></p>
     

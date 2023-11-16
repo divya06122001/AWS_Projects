@@ -10,7 +10,7 @@
   
   <p><li>A dashboard will open which is Amazon EventBridge dashboard shown in picture below:</li></p>
 
-<div align="center">
+<div align="left">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/EventBridge+Dashboard.png" alt="AWS EventBridge Dashboard" width="950" height="350">
 </div>
 
@@ -18,7 +18,7 @@
   <p><li>On the Dashboard page, click on <strong>EventBridge Schedule</strong> option and then choose <strong>Create schedule</strong>.</li></p>
   <p><li>You will encounter a window that resembles the one shown below.</li></p>
 
-<div align="center">
+<div align="left">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Specify+schedule+detail+.png" alt="AWS EventBridge Schedule" width="950" height="350">
 </div>
 
@@ -83,12 +83,13 @@
     <ul>
       <p><li><strong>A recurring schedule without a start date will begin as soon as it is created and available.</strong></li></p>
       <p><li><strong>A recurring schedule without an end date will continue to invoke its target indefinitely.</strong></li></p>
+      <div align="left">
+        <img src="" alt="AWS EventBridge Timeframe" width="900" height="350">
+      </div>
     </ul>
   </li></p>
 
-  <div align="center">
-    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Timeframe.png" alt="AWS EventBridge Timeframe" width="900" height="350">
-  </div>
+ 
 
   <p><li>Choose <strong>Next</strong>.</li></p>
   <p><li>On the <strong>Select target</strong> page, do the following:
@@ -145,8 +146,8 @@
 
   <p><li>Leave the settings for <strong>Encryption</strong> as default.</li></p>
   <p><li>Scroll down to <strong>Permissions</strong> section and choose <strong>Use existing role</strong>, since we have already created an IAM role with the necessary permissions.</li></p>
-  <p><li>From the drop-down, select the <strong>IAM role</strong> that you've made previously by following the steps mentioned in the document: <a href= "https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%201%20-%20Creating%20IAM%20Role.md">Step 2 - Creating an IAM Role</a>.</li></p>
-  <div align="center">
+  <p><li>From the drop-down, select the <strong>IAM role</strong> that you've made previously by following the steps mentioned in the document: <a href= "https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%201%20-%20Creating%20IAM%20Role.md">Step 1 - Creating an IAM Role</a>.</li></p>
+  <div align="left">
     <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Settings+-+Optional+(Part+3).png" alt="AWS EventBridge Settings-Optional 3" width="950" height="350">
   </div>
 
@@ -155,7 +156,7 @@
   <p><li>In the <strong>Review and create schedule</strong> page, review the details of your schedule. In each section, you can choose <strong>Edit</strong> to go back to that step and edit its details.</li></p>
   <p><li>Choose <strong>Create schedule</strong> to finish creating your new schedule.</li></p>
   <p><li>You can view a list of your new and existing schedules on the <strong>Schedules</strong> page. Under the <strong>Status</strong> column, verify that the new schedule is <strong>Enabled</strong>.</li></p>
-  <div align="center">
+  <div align="left">
     <img src="" alt="AWS EventBridge START Schedule details" width="950" height="400">
   </div>
   <p><li>To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status of the EC2 instance around the set trigger time i.e., <strong><em>8:30 AM in the morning</em></strong>.</li></p> 
@@ -175,7 +176,7 @@
         </ul>
       </li></p>
       <p><li>Take a look at the image below for reference. Your schedule should match the example shown.</p></li> 
-      <div align="center">
+      <div align="left">
         <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/STOP+Event.png" alt="AWS EventBridge STOP Event" width="850" height="350">
       </div>
     </ul>

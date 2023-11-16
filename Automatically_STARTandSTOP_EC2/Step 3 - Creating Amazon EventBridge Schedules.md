@@ -155,9 +155,9 @@
   
   <p><li>In the <strong>Review and create schedule</strong> page, review the details of your schedule. In each section, you can choose <strong>Edit</strong> to go back to that step and edit its details.</li></p>
   <p><li>Choose <strong>Create schedule</strong> to finish creating your new schedule.</li></p>
-  <p><li>You can view a list of your new and existing schedules on the <strong>Schedules</strong> page. Under the <strong>Status</strong> column, verify that the new schedule is <strong>Enabled</strong>.</li></p>
+  <p><li>You can view a list of your new and existing schedules on the <strong>Schedules</strong> page. Under the <strong>Status</strong> column, verify that the newly created schedule is <strong>Enabled</strong>.</li></p>
   <div align="left">
-    <img src="" alt="AWS EventBridge START Schedule details" width="950" height="400">
+    <img src="" alt="AWS EventBridge START Schedule details" width="900" height="400">
   </div>
   <p><li>To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status of the EC2 instance around the set trigger time i.e., <strong><em>8:30 AM in the morning</em></strong>.</li></p> 
   <p><li>We have created a <strong>Start Schedule</strong> for our EC2 instances but we need to create a <strong>Stop Schedule</strong> too.</li></p>

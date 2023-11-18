@@ -94,7 +94,7 @@
       <p><li>Under <strong>Target API</strong>, select <strong>Templated targets</strong> and choose <strong>AWS Lambda Invoke</strong>.</li></p>
       <p><li>Take a look at the image below to get a clearer understanding of the above mentioned step.</li></p>
       <div align="left">
-        <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/EventBridge+Target.png" alt="AWS EventBridge Target" width="850" height="350">
+        <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/EventBridge_Target.png" alt="AWS EventBridge Target" width="850" height="350">
       </div>
       <p><li>In the <strong>Invoke</strong> section, choose the <strong>Lambda function</strong> that we have created previously from the dropdown list.</li></p>
       <p><li>For the <strong>Payload</strong>, provide the below mentioned JSON payload. <strong>Payload is the data sent to EventBridge Scheduler's target during a scheduled event trigger</strong> which in our case, is the <strong>Lambda function</strong>.</li></p>
@@ -143,7 +143,7 @@
 
   <p><li>Leave the settings for <strong>Encryption</strong> as default.</li></p>
   <p><li>Scroll down to <strong>Permissions</strong> section and choose <strong>Use existing role</strong>, since we have already created an IAM role with the necessary permissions.</li></p>
-  <p><li>From the drop-down, select the <strong>IAM role</strong> that you've made previously by following the steps mentioned in the document: <a href= "https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%201%20-%20Creating%20IAM%20Role.md">Step 1 - Creating an IAM Role</a>. </li></p>
+  <p><li>From the drop-down, select the <strong>IAM role</strong> that you've made previously by following the steps mentioned in the document: <a href= "https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%201%20-%20Creating%20IAM%20Role.md">Step 1 - Creating an IAM Role</a>. I've created two IAM roles — <strong>one for the Lambda function</strong> and the <strong>other for EventBridge</strong>. That's why I opted for the EventBridge role. If you wish to establish separate roles for your Lambda function and EventBridge, refer to this document for guidance.</li></p>
   <div align="left">
     <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Settings+-+Optional+(Part+3).png" alt="AWS EventBridge Settings-Optional 3" width="950" height="350">
   </div>
@@ -212,16 +212,13 @@
 
   <p><li>Under the <strong>Status</strong> column, verify that the new schedule is <strong>Enabled</strong>.</li></p>
   <div align="center">
-    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/STOP+Schedule+Details.png" alt="AWS EventBridge STOP Schedule details" width="900" height="400">
+    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/STOP+Schedule+Details.png" alt="AWS EventBridge STOP Schedule details" width="950" height="400">
   </div>
-
   <p><li>To verify that your schedule invokes the Amazon Lambda target and stops the running EC2 instance, check the status of the EC2 instance around the set trigger time i.e., <strong>6:00 PM in the evening</strong>.</li></p>
-
   <p><li>Now that we've set up schedules for both the <strong>Start Event</strong> and the <strong>Stop Event</strong> for our Lambda function, the next step is to wait for the magic to happen. However, before that, <strong>take a look at the status of both events to ensure they are enabled and functioning correctly</strong>.</li></p>
   <div align="center">
-    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Schedule+Detail.png" alt="AWS EventBridge Schedule details" width="900" height="350">
+    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Schedule+Detail.png" alt="AWS EventBridge Schedule details" width="950" height="350">
   </div>
-  
   <p><li>In the future, if you find that you no longer need to use the schedule, feel free to <strong><em>disable the rule instead of going through the process of deleting and recreating it</em></strong> in case you need it again accidentally. The great news is that <strong>EventBridge doesn't incur charges for disabled schedules</strong>, providing you with <em>extra flexibility in managing your event triggers</em>.</li></p>
   
 </ol>
@@ -245,34 +242,18 @@ To extend efficient management to diverse EC2 instances, as you saw in the last 
   </li></p>
   
   <p><li>In the <strong>Schedule pattern</strong> section, do the following:
-      <ul>
-        <p><li>For <strong>Occurrence</strong>, choose <strong>One-time schedule</strong> or <strong>Recurring schedule</strong> based on the nature of the event: <strong>Singular</strong> or <strong>Repetitive</strong> respectively.</li></p>
-        <p><li>For <strong>Schedule type</strong>, choose <strong>Cron-based schedule</strong>.</li></p>
-        <p><li>For <strong>Cron expression</strong>, fill as below:</li></p>
-        <div align="left">
-          <table style="border-collapse: collapse; border: 2px solid #444;">
-            <tr>
-              <th>Minutes</th>
-              <th style="border: 1px solid #444; padding: 6px 12px;">Hours</th>
-              <th>Day of Month</th>
-              <th>Month</th>
-              <th style="border: 1px solid #444; padding: 6px 12px;">Day of the Week</th>
-              <th>Year</th>
-            </tr>
-            <tr align="center">
-              <td>00</td>
-              <td style="border: 1px solid #444;">8</td>
-              <td>?</td>
-              <td>*</td>
-              <td style="border: 1px solid #444;">Sat</td>
-              <td>*</td>
-            </tr>
-          </table>
-        </div>
-        <p><li>Take a casual look at the <strong>Next 10 trigger dates</strong> to confirm accuracy and avoid any potential errors.</li></p>
-        <p><li>For <strong>Flexible time window</strong>, choose <strong>Off</strong> to turn off the option.</li></p>
-      </ul>
-    </li></p>
+    <ul>
+      <p><li>For <strong>Occurrence</strong>, choose <strong>One-time schedule</strong>. Keeping it straightforward, here's an example for a one-time schedule in EventBridge.</li></p>
+      <p><li>For <strong>Date and time</strong>, do the following:
+        <ul>
+          <p><li>Enter a valid date in <strong>YYYY/MM/DD</strong> format.</li></p>
+          <p><li>Enter a timestamp in <strong>24-hour hh:mm</strong> format.</li></p>
+          <p><li>For <strong>Timezone</strong>, choose your specific timezone.</li></p>
+        </ul>
+      </li></p>
+      <p><li>For <strong>Flexible time window</strong>, choose <strong>Off</strong> to turn off the option.</li></p>
+    </ul>
+  </li></p>
     
   <p><li>Click on <strong>Next</strong>.</li></p>
   <p><li>On the <strong>Select target</strong> page, choose the AWS API operation that EventBridge Scheduler invokes:
@@ -293,6 +274,7 @@ To extend efficient management to diverse EC2 instances, as you saw in the last 
 ```
 
   <p><li>Click on <strong>Next</strong>.</li></p>
+  <p><li>In the <strong>Settings - <em>optional</em></strong> page, under the <strong>Action after schedule completion</strong> section, choose <strong>NONE</strong> from the dropdown.</li></p>
   <p><li>Keeping everything as default, scroll down to bottom and choose <strong>Use existing role</strong> under <strong>Permissions</strong>.</li></p>
   <p><li>Now, choose the previously made IAM role and then click on <strong>Next</strong>.</li></p>
   <p><li>Review all the things and then click on <strong>Create schedule</strong>.</li></p>

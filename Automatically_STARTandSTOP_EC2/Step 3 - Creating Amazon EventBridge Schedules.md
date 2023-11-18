@@ -49,26 +49,26 @@
         <p><li>For <strong>Occurrence</strong>, choose <strong>Recurring schedule</strong> (This schedule is going to run on and on every week, every month, and every year).</li></p>
         <p><li>For <strong>Schedule type</strong>, choose <strong>Cron-based schedule</strong> (This schedule will run at specific time in the morning and evening).</li></p>
         <p><li>For <strong>Cron expression</strong>, fill as below:</li></p>
-              <div align="left">
-              <table style="border-collapse: collapse; border: 2px solid #444;">
-                <tr>
-                  <th>Minutes</th>
-                  <th style="border: 1px solid #444; padding: 6px 12px;">Hours</th>
-                  <th>Day of Month</th>
-                  <th>Month</th>
-                  <th style="border: 1px solid #444; padding: 6px 12px;">Day of the Week</th>
-                  <th>Year</th>
-                </tr>
-                <tr align="center">
-                  <td>30</td>
-                  <td style="border: 1px solid #444;">8</td>
-                  <td>?</td>
-                  <td>*</td>
-                  <td style="border: 1px solid #444;">Mon-Fri</td>
-                  <td>*</td>
-                </tr>
-               </table>
-              </div>
+        <div align="left">
+          <table style="border-collapse: collapse; border: 2px solid #444;">
+            <tr>
+              <th>Minutes</th>
+              <th style="border: 1px solid #444; padding: 6px 12px;">Hours</th>
+              <th>Day of Month</th>
+              <th>Month</th>
+              <th style="border: 1px solid #444; padding: 6px 12px;">Day of the Week</th>
+              <th>Year</th>
+            </tr>
+            <tr align="center">
+              <td>30</td>
+              <td style="border: 1px solid #444;">8</td>
+              <td>?</td>
+              <td>*</td>
+              <td style="border: 1px solid #444;">Mon-Fri</td>
+              <td>*</td>
+            </tr>
+          </table>
+        </div>
         <p><li><strong>Please note</strong> that the <strong><em>question mark (?)</em></strong> represents <strong><em>no specific value</em></strong>, the <strong><em>asterisk (*)</em></strong> represents <strong><em>any value</em></strong> and the <strong><em>hyphen (-)</em></strong> represents <strong><em>a range</em></strong>.</li></p>
       </ul>
   </li></p>
@@ -77,19 +77,16 @@
 
   <p><li>For <strong>Flexible time window</strong>, choose <strong>Off</strong> to turn off the option.</li></p>
 
-  <p><li>In the <strong>Timeframe</strong> section, specify your <strong>Timezone</strong>.</li></p>
-
-  <p><li>It is <em>totally optional</em> to set both the <strong>start date and time</strong> and an <strong>end date and time</strong> for the schedule.
+  <p><li>In the <strong>Timeframe</strong> section, your <strong>Timezone</strong> will already be specified; if not, please provide the necessary details.
     <ul>
-      <p><li><strong>A recurring schedule without a start date will begin as soon as it is created and available.</strong></li></p>
-      <p><li><strong>A recurring schedule without an end date will continue to invoke its target indefinitely.</strong></li></p>
-      <div align="left">
-        <img src="" alt="AWS EventBridge Timeframe" width="900" height="350">
-      </div>
+      <p><li>It is <em>totally optional</em> to set both the <strong>start date and time</strong> and an <strong>end date and time</strong> for the schedule.
+        <ul>
+          <p><li><strong>A recurring schedule without a start date will begin as soon as it is created and available.</strong></li></p>
+          <p><li><strong>A recurring schedule without an end date will continue to invoke its target indefinitely.</strong></li></p>
+        </ul>
+      </li></p>
     </ul>
   </li></p>
-
- 
 
   <p><li>Choose <strong>Next</strong>.</li></p>
   <p><li>On the <strong>Select target</strong> page, do the following:
@@ -146,7 +143,7 @@
 
   <p><li>Leave the settings for <strong>Encryption</strong> as default.</li></p>
   <p><li>Scroll down to <strong>Permissions</strong> section and choose <strong>Use existing role</strong>, since we have already created an IAM role with the necessary permissions.</li></p>
-  <p><li>From the drop-down, select the <strong>IAM role</strong> that you've made previously by following the steps mentioned in the document: <a href= "https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%201%20-%20Creating%20IAM%20Role.md">Step 1 - Creating an IAM Role</a>.</li></p>
+  <p><li>From the drop-down, select the <strong>IAM role</strong> that you've made previously by following the steps mentioned in the document: <a href= "https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%201%20-%20Creating%20IAM%20Role.md">Step 1 - Creating an IAM Role</a>. </li></p>
   <div align="left">
     <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Settings+-+Optional+(Part+3).png" alt="AWS EventBridge Settings-Optional 3" width="950" height="350">
   </div>
@@ -157,7 +154,7 @@
   <p><li>Choose <strong>Create schedule</strong> to finish creating your new schedule.</li></p>
   <p><li>You can view a list of your new and existing schedules on the <strong>Schedules</strong> page. Under the <strong>Status</strong> column, verify that the newly created schedule is <strong>Enabled</strong>.</li></p>
   <div align="left">
-    <img src="" alt="AWS EventBridge START Schedule details" width="900" height="400">
+    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/START+Schedule+Details.png" alt="AWS EventBridge START Schedule details" width="900" height="400">
   </div>
   <p><li>To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status of the EC2 instance around the set trigger time i.e., <strong><em>8:30 AM in the morning</em></strong>.</li></p> 
   <p><li>We have created a <strong>Start Schedule</strong> for our EC2 instances but we need to create a <strong>Stop Schedule</strong> too.</li></p>
@@ -215,14 +212,14 @@
 
   <p><li>Under the <strong>Status</strong> column, verify that the new schedule is <strong>Enabled</strong>.</li></p>
   <div align="center">
-    <img src="" alt="AWS EventBridge STOP Schedule details" width="900" height="400">
+    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/STOP+Schedule+Details.png" alt="AWS EventBridge STOP Schedule details" width="900" height="400">
   </div>
 
   <p><li>To verify that your schedule invokes the Amazon Lambda target and stops the running EC2 instance, check the status of the EC2 instance around the set trigger time i.e., <strong>6:00 PM in the evening</strong>.</li></p>
 
   <p><li>Now that we've set up schedules for both the <strong>Start Event</strong> and the <strong>Stop Event</strong> for our Lambda function, the next step is to wait for the magic to happen. However, before that, <strong>take a look at the status of both events to ensure they are enabled and functioning correctly</strong>.</li></p>
   <div align="center">
-    <img src="" alt="AWS EventBridge Schedule details" width="900" height="350">
+    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Schedule+Detail.png" alt="AWS EventBridge Schedule details" width="900" height="350">
   </div>
   
   <p><li>In the future, if you find that you no longer need to use the schedule, feel free to <strong><em>disable the rule instead of going through the process of deleting and recreating it</em></strong> in case you need it again accidentally. The great news is that <strong>EventBridge doesn't incur charges for disabled schedules</strong>, providing you with <em>extra flexibility in managing your event triggers</em>.</li></p>

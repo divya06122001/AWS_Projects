@@ -154,7 +154,7 @@
   <p><li>Choose <strong>Create schedule</strong> to finish creating your new schedule.</li></p>
   <p><li>You can view a list of your new and existing schedules on the <strong>Schedules</strong> page. Under the <strong>Status</strong> column, verify that the newly created schedule is <strong>Enabled</strong>.</li></p>
   <div align="left">
-    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/START+Schedule+Details.png" alt="AWS EventBridge START Schedule details" width="900" height="400">
+    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/START+Schedule+Detail.png" alt="AWS EventBridge START Schedule details" width="900" height="400">
   </div>
   <p><li>To verify that your schedule invokes the Amazon Lambda target and starts the EC2 instance, check the status of the EC2 instance around the set trigger time i.e., <strong><em>8:30 AM in the morning</em></strong>.</li></p> 
   <p><li>We have created a <strong>Start Schedule</strong> for our EC2 instances but we need to create a <strong>Stop Schedule</strong> too.</li></p>
@@ -217,7 +217,7 @@
   <p><li>To verify that your schedule invokes the Amazon Lambda target and stops the running EC2 instance, check the status of the EC2 instance around the set trigger time i.e., <strong>6:00 PM in the evening</strong>.</li></p>
   <p><li>Now that we've set up schedules for both the <strong>Start Event</strong> and the <strong>Stop Event</strong> for our Lambda function, the next step is to wait for the magic to happen. However, before that, <strong>take a look at the status of both events to ensure they are enabled and functioning correctly</strong>.</li></p>
   <div align="center">
-    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Schedule+Detail.png" alt="AWS EventBridge Schedule details" width="950" height="350">
+    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/START+Schedule+Details.png" alt="AWS EventBridge Schedule details" width="950" height="350">
   </div>
   <p><li>In the future, if you find that you no longer need to use the schedule, feel free to <strong><em>disable the rule instead of going through the process of deleting and recreating it</em></strong> in case you need it again accidentally. The great news is that <strong>EventBridge doesn't incur charges for disabled schedules</strong>, providing you with <em>extra flexibility in managing your event triggers</em>.</li></p>
   

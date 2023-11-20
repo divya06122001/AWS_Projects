@@ -143,7 +143,7 @@
 
   <p><li>Leave the settings for <strong>Encryption</strong> as default.</li></p>
   <p><li>Scroll down to <strong>Permissions</strong> section and choose <strong>Use existing role</strong>, since we have already created an IAM role with the necessary permissions.</li></p>
-  <p><li>From the drop-down, select the <strong>IAM role</strong> that you've made previously by following the steps mentioned in the document: <a href= "https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%201%20-%20Creating%20IAM%20Role.md">Step 1 - Creating an IAM Role</a>. I've created two IAM roles — <strong>one for the Lambda function</strong> and the <strong>other for EventBridge</strong>. That's why I opted for the EventBridge role. If you wish to establish separate roles for your Lambda function and EventBridge, refer to this document for guidance.</li></p>
+  <p><li>From the drop-down, select the <strong>IAM role</strong> that you've made previously by following the steps mentioned in the document: <a href= "https://github.com/divya06122001/AWS_Projects/blob/main/Automatically_STARTandSTOP_EC2/Step%201%20-%20Creating%20IAM%20Role.md">Step 1 - Creating an IAM Role</a>. I've created two IAM roles — <strong>one for the Lambda function</strong> and the <strong>other for EventBridge</strong>. That's why I opted for the EventBridge role. If you wish to establish separate roles for your Lambda function and EventBridge, refer to this document <a href="">here</a> for guidance.</li></p>
   <div align="left">
     <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/EventBridge+Schedules/Settings+-+Optional+(Part+3).png" alt="AWS EventBridge Settings-Optional 3" width="950" height="350">
   </div>
@@ -264,7 +264,7 @@ To extend efficient management to diverse EC2 instances, as you saw in the last 
   </li></p>
   
   <p><li>In the <strong>Invoke</strong> section, choose the <strong>Lambda function</strong> from the dropdown list, that we have created previously .</li></p>
-  <p><li>For the <strong>Payload</strong>, provide the below mentioned <strong>Payload</strong>.</li></p>
+  <p><li>For the <strong>Payload</strong>, format your tags in accordance with the provided payload below. In this case, a key-value pair has been configured for my EC2 instance, with <strong>"Project"</strong> as the key and <strong>"Prod"</strong> as the value. Consequently, the <strong>JSON payload</strong> takes on the following structure:</li></p>
 
 ```json
 {

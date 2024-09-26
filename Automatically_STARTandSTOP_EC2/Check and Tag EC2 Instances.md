@@ -31,32 +31,29 @@ EC2 instances are the building blocks of your cloud infrastructure. **By checkin
    
  <p><li>From the list of instances, find the <strong>specific EC2 instance</strong> you wish to tag and then click on it.</li></p>
 
- <p><li>In the <strong>Details</strong> section at the bottom, there's a tab labeled <strong>Tags</strong> at the last. Click on it.</li></p>
- 
- <p><li>Take a look at the pictures below as examples, <strong>one showing EC2 Instances with Tags</strong> and the <strong>other showing EC2 Instances without Tags</strong>.</li></p>
+ <p><li>In the <strong>Details</strong> section at the bottom, there's a tab labeled <strong>Tags</strong> at the last. Click on it and you'll get either of the views as per below: </li></p>
 </ol>
 
-| EC2 Instances with Tags |
-:-------------------------:|
-![](https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/Checking+Tags+of+EC2.png)
-    
 | EC2 Instances without Tags |
 :-------------------------:|
 ![](https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/No+Tags.png)
+    
+| EC2 Instances with Tags |
+:-------------------------:|
+![](https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/Checking+Tags+of+EC2.png)
 
-<br>
 <br>
 <h2 align= "left">To add tags to an individual EC2 instance</h2>
 
-Follow the above mentioned steps above to check if your EC2 instances are having "tags" or not. Now to add "tags", follow these steps:
+If you got the view similiar to the one mentioned as "EC2 Instances without Tags", follow these steps to add tags to your instance:
 <ol>
   <p><li>Once you click on the <strong>Tags</strong> tab, you'll find a button called <strong>Manage Tags</strong> on the right side. You can see it in the pictures included in the previous section headlined as Examples for both Tagged and Non Tagged EC2 Instances.</li></p>
   <p><li>Click on <strong>Manage tags</strong> and a new window will open just like the one shown below:</li></p>
-
-<div align="center">
-  <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/New+Tag.png" alt="Logo" width="900" height="400">
-</div>
-
+  
+  <div align="center">
+    <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/New+Tag.png" alt="Logo" width="900" height="400">
+  </div>
+  
   <p><li>Click on <strong>Add new tag</strong>.</li></p>
   <p><li>Enter the <strong>key and value</strong> for the tag.</li></p>
   <p><li>Choose <strong>Add new tag</strong>, if you want to add any additional tag.</li></p>
@@ -65,8 +62,7 @@ Follow the above mentioned steps above to check if your EC2 instances are having
 <div align="center">
   <img src="https://myprojectrelatedimages.s3.ap-south-1.amazonaws.com/EC2StartandStop/Check+and+Tag+EC2+Instances/Added+New+Tag.png" alt="Logo" width="900" height="400">
 </div>
-
-  <p><li>For this project, you must make sure that one of the <strong>Tag: Value</strong> pairs should be <strong>Project: UAT</strong> as it will be easy to understand.</li></p>
+<p><li>For this project, you must make sure that one of the <strong>Tag: Value</strong> pairs should be <strong>Project: UAT</strong> as it will be easy to understand.</li></p>
   <p><li>You can also use your <strong>own defined tags</strong> but then you have to change the <strong>DEFAULT_TAGS</strong> value when modifying Lambda function (You'll come to understand it once you create a Lambda function which will be detailed in the subsequent document).</li></p>
   <p><li>When you are finished adding tags, click on <strong>Save</strong> button.</li></p>
   <p><li>Now, check again to see the updated tags and it will look something like this:</li></p>

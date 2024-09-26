@@ -28,7 +28,7 @@
 
 <p><li>Under <strong>Permissions</strong>, expand <strong>Change default execution role</strong> and then choose <strong>Use an existing role</strong> as we have already create one before.</li></p> 
 <p><li>The picture below offers a clear overview of the Step 7 and Step 8.</li></p>
-<p><li>From the drop-down under <strong>Existing role</strong>, choose the <strong>IAM role</strong> you made beforehand.</li></p>
+<p><li>From the drop-down under <strong>Existing role</strong>, choose the <strong>IAM role</strong> we created in Step 1 of this project (<b>Creating IAM Role</b>).</li></p>
 <p><li>Leave the other settings as default and proceed with the setup. Click on <strong>Create function</strong> to finalize the creation of your Lambda function.</li></p> 
 
 <p><li>Upon clicking Create function button, the <strong>Function overview</strong> dashboard will open, displaying a visual representation of your Lambda function.</li></p>
